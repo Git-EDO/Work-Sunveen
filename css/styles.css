@@ -550,6 +550,9 @@ li {
   .header-burger::after {
     background: var(--dark-blue);
   }
+  .nav .container {
+    width: 100vw;
+  }
 }
 @media (max-width: 425px) {
   
