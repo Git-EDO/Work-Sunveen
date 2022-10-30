@@ -536,6 +536,7 @@ li {
 }
 .popular-items-body .swiper-button-disabled {
   opacity: 0.7;
+  cursor: auto;
 }
 .popular-body-btn {
 }
@@ -775,6 +776,161 @@ li {
   bottom: -30px;
 }
 
+/* === FEEDBACK BLOCK === */
+
+.feedback-block {
+  margin-top: 80px;
+}
+.feedback-body {
+  width: 100%;
+  height: 261px;
+  position: relative;
+
+  background-image: url('../img/feedback-block/feedback-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  box-shadow: 0px 4px 30px rgba(55, 65, 104, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedback-body-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--dark-blue);
+  opacity: 0.85;
+}
+.feedback-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.feedback-body-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+}
+.feedback-body-title a {
+  white-space: nowrap;
+}
+.feedback-body-subtitle {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 10px;
+}
+.feedback-form {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedback-form input {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #F1F1F1;
+  border-radius: 4px;
+  padding: 20px 17px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 115%;
+  color: #F1F1F1;
+  height: 50px;
+  width: 270px;
+}
+.feedback-form input:hover {
+  border: 1px solid var(--orange);
+}
+.feedback-form input:focus {
+  border: 1px solid var(--orange);
+  outline: none;
+}
+.feedback-form input:not(:first-child) {
+  margin-left: 20px;
+}
+.feedback-form input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 115%;
+  color: #F1F1F1;
+}
+.phone {
+}
+.btn {
+}
+.feedback-form-btn {
+  outline: none;
+  border: none;
+  height: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+  width: 270px;
+}
+
+/* === MAP === */
+
+.map {
+  width: 100%;
+  height: 769px;
+  margin-top: 80px;
+}
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+.map {
+}
+.map .container {
+  position: relative;
+}
+.map-contacts-body {
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  left: 0;
+  z-index: 2;
+  padding: 50px 80px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.map-contacts-body a {
+  transition: 0.5s ease;
+}
+.map-contacts-body a:hover {
+  color: rgba(65, 65, 65, 0.7);
+}
+.contacts-title {
+  font-weight: 800;
+  font-size: 36px;
+  color: var(--title-color);
+}
+.contacts-item {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts-item-title {
+  display: flex;
+}
+.contacts-item-img {
+}
+.contacts-item-subtitle {
+  color: #8C8C8C;
+  margin-left: 10px;
+}
+.contacts-item-text {
+  margin-top: 5px;
+}
+
 @media (max-width: 1200px) {
   .header-address {
     flex: 0 0 20%;
@@ -1000,6 +1156,38 @@ li {
   .actual-small-bg img {
     object-position: center;
   }
+  .feedback-form {
+    flex-direction: column;
+  }
+  .feedback-form input:not(:first-child) {
+    margin-left: 0px;
+    margin-top: 18px;
+  }
+  .feedback-form input {
+    width: 300px;
+  }
+  .feedback-form-btn {
+    margin-left: 0px;
+    margin-top: 18px;
+    width: 300px;
+  }
+  .feedback-body {
+    padding: 60px 50px;
+    height: 482px;
+  }
+  .feedback-body-title {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .feedback-body-subtitle {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .map {
+    height: 635px;
+  }
 }
 @media (max-width: 768px) {
   .header-first-row .call-btn {
@@ -1054,6 +1242,9 @@ li {
   }
   .actual-small-link {
     font-size: 16px;
+  }
+  .map {
+    height: 435px;
   }
 }
 @media (max-width: 576px) {
@@ -1137,6 +1328,23 @@ li {
   }
   .section-title h2 {
     font-size: 24px;
+  }
+  .feedback-body-title {
+    width: 100%;
+    font-size: 18px;
+  }
+  .feedback-body-subtitle {
+    font-size: 13px;
+  }
+  .feedback-form input {
+    width: 260px;
+  }
+  .feedback-form-btn {
+    width: 260px;
+  }
+  .feedback-body {
+    padding: 40px 20px;
+    height: 431px;
   }
 }
 @media (max-width: 320px) {
