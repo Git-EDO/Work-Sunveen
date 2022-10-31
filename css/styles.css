@@ -126,7 +126,6 @@ li {
 .btn:hover {
   background: linear-gradient(266.39deg, #FF9736 4.35%, #F58014 100%);
   box-shadow: 0px 4px 20px rgba(255, 123, 0, 0.3);
-  border-radius: 5px;
 }
 .btn:active {
   background: #E07411;
@@ -508,7 +507,7 @@ input::placeholder {
 }
 .start-page-title {
   flex: 0 0 50%;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 26px;
   line-height: 145%;
   color: var(--title-color);
@@ -718,7 +717,11 @@ a.blue-cards-column:hover > div {
   cursor: auto;
 }
 .popular-body-btn {
-  background: var(--orange);
+  background: var(--dark-blue);
+}
+.popular-body-btn:hover {
+  background: #233ca3;
+  box-shadow: 0px 4px 20px rgba(35, 60, 163, 0.3);
 }
 
 /* === ACTUAL PROMOS === */
