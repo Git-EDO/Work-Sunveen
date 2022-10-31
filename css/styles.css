@@ -19,6 +19,7 @@ body {
   font-style: normal;
   line-height: 125%;
   color: var(--text-color);
+  font-variant-numeric: lining-nums;
 }
 
 body.lock {
