@@ -1310,12 +1310,17 @@ input::placeholder {
     position: relative;
   }
   .nav-menu .has-submenu:hover::after {
+    border-top: none;
+  }
+  .nav-menu .has-submenu:hover::after {
     top: 25px;
     transform: translateY(-50%) rotate(-45deg);
+    background-color: var(--orange);
   }
   .nav-menu .has-submenu:hover::before {
     top: 25px;
     transform: translateY(-50%) rotate(45deg);
+    background-color: var(--orange);
   }
   .nav-menu .has-submenu::after {
     content: '';
