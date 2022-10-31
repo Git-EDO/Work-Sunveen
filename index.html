@@ -105,9 +105,29 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="btn mobile-call-btn">Заказать звонок</a>
+            <a href="#" class="btn mobile-call-btn call-btn">Заказать звонок</a>
         </div>
       </nav>
+      <div class="header-popup popup">
+        <div class="header-popup-body popup-body">
+          <div class="popup-close"></div>
+          <div class="popup-title">
+            Заказать звонок
+          </div>
+          <div class="popup-subtitle">
+            Заполните форму, наш менеджер свяжется с Вами в ближайшее время
+          </div>
+          <form class="header-popup-form">
+            <input type="text" placeholder="Ваше имя" name="name" required>
+            <input type="text" placeholder="Ваш телефон" name="phone" class="phone" required>
+            <div class="checkbox-personal">
+              <input type="checkbox" value="yes" name="personal-data" id="header-personal" required>
+              <label for="header-personal">Согласен на обработку <a href="#">персональных данных</a></label>
+            </div>
+            <button class="btn header-btn">Отправить</button>
+          </form>
+        </div>
+      </div>
     </header>
     <main class="main">
       <section class="start-page">
@@ -169,7 +189,7 @@
           </div>
         </div>
       </section>
-      <section class="popular-products">
+      <section class="popular-products after-cards-section">
         <div class="container">
           <div class="section-title">
             <h2>
@@ -441,7 +461,13 @@
           </div>
         </div>
       </section>
-      <section class="map" id="map">
+      <section class="map-section">
+        <div class="desktop-map" id="map"></div>
+        <div class="section-title">
+          <h2>
+            Контакты
+          </h2>
+        </div>
         <div class="container">
           <div class="map-contacts-body">
             <div class="contacts-title">
@@ -514,12 +540,97 @@
               </div>
             </div>
           </div>
+          <div class="mobile-picture-map">
+            <img src="./img/map/mobile-map.jpg" alt="img">
+          </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer-bg">
+        <div class="footer-bg-img">
+          <img src="./img/footer/footer-bg-jpg.jpg" alt="bg">
+        </div>
+        <div class="footer-bg-cover"></div>
+      </div>
+      <div class="container">
+        <div class="footer-wrapper">
+            <a href="#" class="footer-logo">
+              <img src="./img/footer/footer-logo.svg" alt="logo">
+            </a>
+            <div class="footer-links-column">
+              <ul class="footer-links">
+                <li class="footer-header-links">каталог товаров</li>
+                <li><a href="#">Солнечные панели</a></li>
+                <li><a href="#">Инверторы</a></li>
+                <li><a href="#">Ветрогенераторы</a></li>
+                <li><a href="#">Контроллеры</a></li>
+                <li><a href="#">Аккумуляторы</a></li>
+                <li><a href="#">Солнечные коллекторы</a></li>
+                <li><a href="#">Сплит-системы</a></li>
+                <li><a href="#">Баки</a></li>
+                <li><a href="#">Тепловые насосы</a></li>
+                <li><a href="#">Кондиционеры</a></li>
+                <li><a href="#">ИК-обогреватели</a></li>
+                <li><a href="#">Насосы</a></li>
+                <li><a href="#">Комплектующие и аксессуары</a></li>
+                <li><a href="#">Зарядные станции для электротранспорта</a></li>
+                <li><a href="#">Видеонаблюдение и сигнализация</a></li>
+                <li><a href="#">Окна ПВХ</a></li>
+              </ul>
+              <ul class="footer-links">
+                <li class="footer-header-links">Покупателям</li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Категории товаров</a></li>
+                <li><a href="#">Действующие акции</a></li>
+                <li><a href="#">Наши работы</a></li>
+                <li><a href="#">Наши партнёры</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О компании</a></li>
+              </ul>
+              <ul class="footer-links">
+                <li class="footer-header-links">контактные телефоны</li>
+                <li>
+                  Мобильные тел.:
+                  <br>
+                  <a href="tel:+7 (963) 738-42-40">+7 (963) 738-42-40</a>
+                  <br>
+                  <a href="tel:+7 (906) 237-95-85">+7 (906) 237-95-85</a>
+                </li>
+                <li>
+                  Городские тел.:
+                  <br>
+                  <a href="tel:+7 (4012) 37-42-40">+7 (4012) 37-42-40</a>
+                  <br>
+                  <a href="tel:+7 (4012) 37-95-85">+7 (4012) 37-95-85</a>
+                </li>
+                <li class="footer-header-links">график работы</li>
+                <li>
+                  Пн.-пт.: 09:00-18:00 ч.,
+                  <br>
+                  сб.-вс.: выходной
+                </li>
+                <li class="footer-header-links">электронная почта</li>
+                <a href="mailto:info@sunveen.ru">info@sunveen.ru</a>
+                <li class="footer-header-links">Офис</li>
+                <li>Калининград, Советский проспект, дом 202</li>
+              </ul>
+          </div>
+          <div class="footer-scroll-link">
+            <img src="./img/footer/arrow-top.svg" alt="icon">
+          </div>
+        </div>
+        <div class="footer-text">
+            <p>© ООО «Берег-Плюс», 2022г.</p>
+            <p><a href="#">Политика конфиденциальности</a></p>
+        </div>
+      </div>
+
+    </footer>
   </div>
   
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<ваш API-ключ>"></script>
+  <script src="https://unpkg.com/imask"></script>
   <script src="./js/swiper-bundle.js"></script>
   <script src="./js/script.js"></script>
 </body>

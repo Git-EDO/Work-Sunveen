@@ -19,6 +19,29 @@ closeMenu.addEventListener('click', (e) => {
   burger.classList.remove('active')
 })
 
+// Header popup 
+
+const headerPopup = document.querySelector('.header-popup')
+const closePopup = document.querySelectorAll('.popup-close')
+const callPopupBtns = document.querySelectorAll('.call-btn')
+
+callPopupBtns.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    headerPopup.classList.add('active')
+  })
+})
+
+closePopup.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    btn.closest('.popup').classList.remove('active')
+  })
+})
+
+headerPopup.addEventListener('click', (e) => {
+  if(!e.target.closest('.popup-body')) {
+    headerPopup.classList.remove('active')
+  }
+})
 
 // Слайдер на главной
 
@@ -126,4 +149,28 @@ function init() {
   map.controls.remove('rulerControl'); // удаляем контрол правил
   map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
   map.geoObjects.add(placemark);
+}
+
+// Footer scroll
+
+const foolterScrollLink = document.querySelector('.footer-scroll-link')
+
+foolterScrollLink.addEventListener('click', (e) => {
+  e.preventDefault()
+  const wrapper = document.querySelector('.wrapper')
+  wrapper.scrollIntoView({block: "start", behavior: "smooth"});
+})
+
+
+// Маска для телефонов
+
+const phones = document.querySelectorAll('.phone');
+
+if(phones.length > 0) {  
+    const maskOptions = {
+      mask: '+{7}(000)000-00-00'
+    };
+    phones.forEach(input => {
+      const mask = IMask(input, maskOptions);
+    })
 }
