@@ -225,7 +225,7 @@ li {
   transition: 0.5s ease;
 }
 .nav-menu > li a:hover {
-  color:rgba(255, 255, 255, 0.6);
+  color: var(--orange);
 }
 .nav-menu > li:not(:first-child){
   margin-left: 40px;
@@ -555,6 +555,9 @@ input::placeholder {
   bottom: 16px;
   right: 16px;
 }
+a.blue-cards-column:hover > div {
+  color: var(--orange);
+}
 .blue-cards-column:hover::after {
   width: 350px;
   height: 350px;
@@ -715,6 +718,7 @@ input::placeholder {
   cursor: auto;
 }
 .popular-body-btn {
+  background: var(--orange);
 }
 
 /* === ACTUAL PROMOS === */
@@ -996,6 +1000,10 @@ input::placeholder {
 }
 .feedback-body-title a {
   white-space: nowrap;
+  transition: 0.5s ease;
+}
+.feedback-body-title a:hover {
+  color: var(--orange);
 }
 .feedback-body-subtitle {
   font-size: 18px;
@@ -1130,7 +1138,7 @@ input::placeholder {
   transition: 0.5s ease;
 }
 .footer a:hover {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--orange);
 }
 .footer-bg {
   position: absolute;

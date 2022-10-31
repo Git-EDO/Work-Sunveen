@@ -161,6 +161,17 @@ foolterScrollLink.addEventListener('click', (e) => {
   wrapper.scrollIntoView({block: "start", behavior: "smooth"});
 })
 
+// Скролл до контактов
+
+const contactsHeaderScroll = document.querySelectorAll('.contacts-scroll')
+
+contactsHeaderScroll.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    const mapSection = document.querySelector('.map-section')
+    mapSection.scrollIntoView({block: "start", behavior: "smooth"});
+  })
+})
 
 // Маска для телефонов
 
