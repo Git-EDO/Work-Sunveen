@@ -1542,6 +1542,9 @@ input::placeholder {
   .footer-text p:not(:first-child) {
     margin-left: 20px;
   }
+  .footer {
+    margin-top: 80px;
+  }
 }
 @media (max-width: 768px) {
   .header-first-row .call-btn {
