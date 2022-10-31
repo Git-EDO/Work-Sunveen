@@ -507,7 +507,7 @@ input::placeholder {
 }
 .start-page-title {
   flex: 0 0 50%;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 26px;
   line-height: 145%;
   color: var(--title-color);
