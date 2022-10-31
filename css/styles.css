@@ -202,9 +202,13 @@ li {
 .nav-menu .has-submenu {
   position: relative;
 }
+.nav-menu .has-submenu:hover > a {
+  color: var(--orange);
+}
 .nav-menu .has-submenu:hover::after {
   top: calc(50% - 3px);
   transform: translateY(-50%) rotate(180deg);
+  border-top: 5px solid var(--orange);
 }
 .nav-menu .has-submenu::after {
   content: '';
@@ -703,7 +707,7 @@ input::placeholder {
 }
 .popular-body-button {
   display: flex;
-  margin-top: 40px;
+  margin-top: 10px;
   justify-content: center;
 }
 .popular-items-body .swiper-button-disabled {
