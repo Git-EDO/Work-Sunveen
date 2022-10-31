@@ -720,8 +720,8 @@ a.blue-cards-column:hover > div {
   background: var(--dark-blue);
 }
 .popular-body-btn:hover {
-  background: #233ca3;
-  box-shadow: 0px 4px 20px rgba(35, 60, 163, 0.3);
+  /* background: #233ca3; */
+  /* box-shadow: 0px 4px 20px rgba(35, 60, 163, 0.3); */
 }
 
 /* === ACTUAL PROMOS === */
