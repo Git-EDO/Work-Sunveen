@@ -1450,6 +1450,7 @@ a.blue-cards-column:hover>div {
   font-weight: 500;
   font-size: 16px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .catalogue-start-page .start-page-title {
@@ -1637,9 +1638,11 @@ a.blue-cards-column:hover>div {
 }
 
 /* === SUBCATEGORIES === */
+
 .subcategories-start-page {
   height: 460px;
 }
+
 .subcategories-start-page-bg .start-page-bg-cover {
   background: linear-gradient(90.81deg, rgba(255, 255, 255, 0.95) 10.34%, rgba(255, 255, 255, 0.855) 35.66%, rgba(255, 255, 255, 0.665) 55.37%, rgba(255, 255, 255, 0.114) 73.51%, rgba(255, 255, 255, 0) 90.86%);
   transform: none;
