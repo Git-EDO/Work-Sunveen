@@ -1020,6 +1020,7 @@ a.blue-cards-column:hover>div {
 .actual-small-title {
   font-weight: 800;
   font-size: 34px;
+  line-height: 115%;
   color: #fff;
 }
 
@@ -1622,11 +1623,25 @@ a.blue-cards-column:hover>div {
   align-items: center;
 
   transition: 0.5s ease;
+
+  position: relative;
 }
 
 .partners-item:hover {
   box-shadow: 0px 4px 30px rgba(18, 25, 55, 0.15);
   border: 1px solid transparent;
+}
+
+.partners-item.active {
+  box-shadow: 0px 4px 30px rgba(18, 25, 55, 0.15);
+  border: 1px solid transparent;
+}
+.partners-item.active::after {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  content: url('../img/catalogue/logos/cursor.svg');
+
 }
 
 .partner-logo {
@@ -2572,6 +2587,9 @@ a.blue-cards-column:hover>div {
   .blue-cards {
     transform: translateY(-600px);
   }
+  .subcategories-blue-cards {
+    transform: translateY(-490px);
+  }
 
   .after-cards-section {
     margin-top: -600px;
@@ -2653,6 +2671,9 @@ a.blue-cards-column:hover>div {
 @media (max-width: 320px) {
   .blue-cards {
     transform: translateY(-570px);
+  }
+  .subcategories-blue-cards {
+    transform: translateY(-490px);
   }
 
   .after-cards-section {

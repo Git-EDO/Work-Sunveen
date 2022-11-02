@@ -146,37 +146,41 @@ const swiper = new Swiper('.our-works-swiper', {
 
 // Карта
 
-ymaps.ready(init)
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.map')) {
+    ymaps.ready(init)
 
-if (document.querySelector('.map')) {
-  function init() {
-    const map = new ymaps.Map('map', {
-      center: [54.74523049679196, 20.456964491677958],
-      zoom: 16,
-    })
 
-    let placemark = new ymaps.Placemark(
-      [54.74654503730708, 20.463295042327765],
-      {},
-      {
-        iconLayout: 'default#image',
-        iconImageHref: './img/map/geo.svg',
-        iconImageSize: [40, 40],
-        iconImageOffset: [-13, -50],
-      }
-    )
-
-    map.controls.remove('geolocationControl') // удаляем геолокацию
-    map.controls.remove('searchControl') // удаляем поиск
-    map.controls.remove('trafficControl') // удаляем контроль трафика
-    map.controls.remove('typeSelector') // удаляем тип
-    map.controls.remove('fullscreenControl') // удаляем кнопку перехода в полноэкранный режим
-    map.controls.remove('zoomControl') // удаляем контрол зуммирования
-    map.controls.remove('rulerControl') // удаляем контрол правил
-    map.behaviors.disable(['scrollZoom']) // отключаем скролл карты (опционально)
-    map.geoObjects.add(placemark)
+    function init() {
+      const map = new ymaps.Map('map', {
+        center: [54.74523049679196, 20.456964491677958],
+        zoom: 16,
+      })
+  
+      let placemark = new ymaps.Placemark(
+        [54.74654503730708, 20.463295042327765],
+        {},
+        {
+          iconLayout: 'default#image',
+          iconImageHref: './img/map/geo.svg',
+          iconImageSize: [40, 40],
+          iconImageOffset: [-13, -50],
+        }
+      )
+  
+      map.controls.remove('geolocationControl') // удаляем геолокацию
+      map.controls.remove('searchControl') // удаляем поиск
+      map.controls.remove('trafficControl') // удаляем контроль трафика
+      map.controls.remove('typeSelector') // удаляем тип
+      map.controls.remove('fullscreenControl') // удаляем кнопку перехода в полноэкранный режим
+      map.controls.remove('zoomControl') // удаляем контрол зуммирования
+      map.controls.remove('rulerControl') // удаляем контрол правил
+      map.behaviors.disable(['scrollZoom']) // отключаем скролл карты (опционально)
+      map.geoObjects.add(placemark)
+    }
   }
-}
+})
+
 
 // Footer scroll
 
@@ -244,21 +248,35 @@ if (phones.length > 0) {
 // });
 
 const partnersLogos = document.querySelectorAll('.partners-item')
+const activePartnersLogo = document.querySelector('.active-partners-item')
+
 
 if (partnersLogos.length > 0) {
   partnersLogos.forEach((logo) => {
     console.log(logo)
-    logo.addEventListener('mouseover', () => {
-      const logoImg = logo.querySelector('.partner-logo img')
-      logoImg.src = logoImg.dataset.colorimg
+    logo.addEventListener('mouseover', (e) => {
+      if(!e.target.closest('.active-partners-item')) {
+        const logoImg = logo.querySelector('.partner-logo img')
+        logoImg.src = logoImg.dataset.colorimg
+        activePartnersLogo.classList.remove('active')
+        activePartnersLogo.querySelector('.partner-logo img').src = activePartnersLogo.querySelector('.partner-logo img').dataset.filterimg
+      } else {
+        activePartnersLogo.classList.remove('active')
+      }
     })
   })
 
   partnersLogos.forEach((logo) => {
-    logo.addEventListener('mouseout', () => {
-      const logoImg = logo.querySelector('.partner-logo img')
-      logoImg.src = logoImg.dataset.filterimg
+    logo.addEventListener('mouseout', (e) => {
+
+      if(!e.target.closest('.active-partners-item')) {
+        const logoImg = logo.querySelector('.partner-logo img')
+        logoImg.src = logoImg.dataset.filterimg
+        activePartnersLogo.classList.add('active')
+        activePartnersLogo.querySelector('.partner-logo img').src = activePartnersLogo.querySelector('.partner-logo img').dataset.colorimg
+      } else {
+        activePartnersLogo.classList.add('active')
+      }
     })
   })
 }
-
