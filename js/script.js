@@ -8,7 +8,7 @@ burger.addEventListener('click', (e) => {
 })
 
 mobileMenu.addEventListener('click', (e) => {
-  if(!e.target.closest('.nav .container')) {
+  if (!e.target.closest('.nav .container')) {
     mobileMenu.classList.remove('active')
     burger.classList.remove('active')
   }
@@ -19,34 +19,53 @@ closeMenu.addEventListener('click', (e) => {
   burger.classList.remove('active')
 })
 
-// Header popup 
+// Header popup
 
 const headerPopup = document.querySelector('.header-popup')
 const closePopup = document.querySelectorAll('.popup-close')
 const callPopupBtns = document.querySelectorAll('.call-btn')
 
-callPopupBtns.forEach(btn => {
+callPopupBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     headerPopup.classList.add('active')
   })
 })
 
-closePopup.forEach(btn => {
+closePopup.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     btn.closest('.popup').classList.remove('active')
   })
 })
 
 headerPopup.addEventListener('click', (e) => {
-  if(!e.target.closest('.popup-body')) {
+  if (!e.target.closest('.popup-body')) {
     headerPopup.classList.remove('active')
   }
 })
 
+// Popup promos
+
+const promoLinks = document.querySelectorAll('.promo-link')
+const promoPopup = document.querySelector('.promo-popup')
+
+if(promoLinks.length > 0) {
+  promoLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      promoPopup.classList.add('active')
+    })
+  })
+}
+
+promoPopup.addEventListener('click', (e) => {
+  if (!e.target.closest('.popup-body')) {
+    promoPopup.classList.remove('active');
+  }
+})
+
+
 // Слайдер на главной
 
-let mainSwiper =new Swiper('.swiper', {
-
+let mainSwiper = new Swiper('.swiper', {
   // Optional parameters
   slidesPerView: 4,
   slidesPerGroup: 4,
@@ -69,13 +88,12 @@ let mainSwiper =new Swiper('.swiper', {
     },
   },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.navigation-arrow-right',
-      prevEl: '.navigation-arrow-left',
-    }
-});
-
+  // Navigation arrows
+  navigation: {
+    nextEl: '.navigation-arrow-right',
+    prevEl: '.navigation-arrow-left',
+  },
+})
 
 // 3D карусель
 
@@ -86,7 +104,7 @@ const swiper = new Swiper('.our-works-swiper', {
   loop: true,
   pagination: {
     el: '.swiper-pagination',
-    clickable: true
+    clickable: true,
   },
   navigation: {
     nextEl: '.navigation-arrow-right',
@@ -99,8 +117,8 @@ const swiper = new Swiper('.our-works-swiper', {
       coverflowEffect: {
         depth: 0,
         rotate: 0,
-        slideShadows: false
-      }
+        slideShadows: false,
+      },
     },
     768: {
       slidesPerView: 2,
@@ -108,48 +126,51 @@ const swiper = new Swiper('.our-works-swiper', {
       coverflowEffect: {
         depth: 0,
         rotate: 0,
-        slideShadows: false
-      }
+        slideShadows: false,
+      },
     },
     992: {
       slidesPerView: 3,
       coverflowEffect: {
         depth: 400,
         rotate: 0,
-        slideShadows: false
-      }
-    }
-  }
-});
-
+        slideShadows: false,
+      },
+    },
+  },
+})
 
 // Карта
 
 ymaps.ready(init)
 
-if(document.querySelector('.map')) {
+if (document.querySelector('.map')) {
   function init() {
     const map = new ymaps.Map('map', {
-      center: [54.74523049679196,20.456964491677958],
-      zoom: 16
-    });
-  
-    let placemark = new ymaps.Placemark([54.74654503730708,20.463295042327765], {}, {
-      iconLayout: 'default#image',
-      iconImageHref: './img/map/geo.svg',
-      iconImageSize: [40, 40],
-      iconImageOffset: [-13, -50]
+      center: [54.74523049679196, 20.456964491677958],
+      zoom: 16,
     })
-  
-    map.controls.remove('geolocationControl'); // удаляем геолокацию
-    map.controls.remove('searchControl'); // удаляем поиск
-    map.controls.remove('trafficControl'); // удаляем контроль трафика
-    map.controls.remove('typeSelector'); // удаляем тип
-    map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
-    map.controls.remove('zoomControl'); // удаляем контрол зуммирования
-    map.controls.remove('rulerControl'); // удаляем контрол правил
-    map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
-    map.geoObjects.add(placemark);
+
+    let placemark = new ymaps.Placemark(
+      [54.74654503730708, 20.463295042327765],
+      {},
+      {
+        iconLayout: 'default#image',
+        iconImageHref: './img/map/geo.svg',
+        iconImageSize: [40, 40],
+        iconImageOffset: [-13, -50],
+      }
+    )
+
+    map.controls.remove('geolocationControl') // удаляем геолокацию
+    map.controls.remove('searchControl') // удаляем поиск
+    map.controls.remove('trafficControl') // удаляем контроль трафика
+    map.controls.remove('typeSelector') // удаляем тип
+    map.controls.remove('fullscreenControl') // удаляем кнопку перехода в полноэкранный режим
+    map.controls.remove('zoomControl') // удаляем контрол зуммирования
+    map.controls.remove('rulerControl') // удаляем контрол правил
+    map.behaviors.disable(['scrollZoom']) // отключаем скролл карты (опционально)
+    map.geoObjects.add(placemark)
   }
 }
 
@@ -160,35 +181,34 @@ const foolterScrollLink = document.querySelector('.footer-scroll-link')
 foolterScrollLink.addEventListener('click', (e) => {
   e.preventDefault()
   const wrapper = document.querySelector('.wrapper')
-  wrapper.scrollIntoView({block: "start", behavior: "smooth"});
+  wrapper.scrollIntoView({ block: 'start', behavior: 'smooth' })
 })
 
 // Скролл до контактов
 
 const contactsHeaderScroll = document.querySelectorAll('.contacts-scroll')
 
-if(contactsHeaderScroll.length > 0) {
-  contactsHeaderScroll.forEach(btn => {
+if (contactsHeaderScroll.length > 0) {
+  contactsHeaderScroll.forEach((btn) => {
     btn.addEventListener('click', (e) => {
       e.preventDefault()
       const mapSection = document.querySelector('.map-section')
-      mapSection.scrollIntoView({block: "start", behavior: "smooth"});
+      mapSection.scrollIntoView({ block: 'start', behavior: 'smooth' })
     })
   })
 }
 
-
 // Маска для телефонов
 
-const phones = document.querySelectorAll('.phone');
+const phones = document.querySelectorAll('.phone')
 
-if(phones.length > 0) {  
-    const maskOptions = {
-      mask: '+{7}(000)000-00-00'
-    };
-    phones.forEach(input => {
-      const mask = IMask(input, maskOptions);
-    })
+if (phones.length > 0) {
+  const maskOptions = {
+    mask: '+{7}(000)000-00-00',
+  }
+  phones.forEach((input) => {
+    const mask = IMask(input, maskOptions)
+  })
 }
 
 // Цветные изображения
@@ -221,20 +241,20 @@ if(phones.length > 0) {
 
 const partnersLogos = document.querySelectorAll('.partners-item')
 
-if(partnersLogos.length > 0) {
-
-  partnersLogos.forEach(logo => {
+if (partnersLogos.length > 0) {
+  partnersLogos.forEach((logo) => {
     console.log(logo)
     logo.addEventListener('mouseover', () => {
       const logoImg = logo.querySelector('.partner-logo img')
       logoImg.src = logoImg.dataset.colorimg
     })
   })
-  
-  partnersLogos.forEach(logo => {
+
+  partnersLogos.forEach((logo) => {
     logo.addEventListener('mouseout', () => {
       const logoImg = logo.querySelector('.partner-logo img')
       logoImg.src = logoImg.dataset.filterimg
     })
   })
 }
+
