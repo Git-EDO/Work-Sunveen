@@ -1436,6 +1436,11 @@ a.blue-cards-column:hover>div {
 .catalogue-start-page {
   height: 460px;
 }
+
+.catalogue-start-page .start-page-body {
+  padding-top: 90px;
+}
+
 .catalogue-start-page-bg img {
   object-position: center center;
 }
@@ -1463,7 +1468,6 @@ a.blue-cards-column:hover>div {
 
 .catalogue-blue-cards .blue-cards-column {
   min-height: 140px;
-  /* padding: 30px 45px 40px 30px; */
 }
 
 .catalogue-blue-cards .blue-card-subtitle {
