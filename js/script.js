@@ -51,6 +51,7 @@ const promoPopup = document.querySelector('.promo-popup')
 if(promoLinks.length > 0) {
   promoLinks.forEach(link => {
     link.addEventListener('click', (e) => {
+      e.preventDefault()
       promoPopup.classList.add('active')
     })
   })
