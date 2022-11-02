@@ -2553,6 +2553,10 @@ a.blue-cards-column:hover>div {
   .promos-section-grid {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
+
+  .catalogue-start-page .start-page-body {
+    padding-top: 60px;
+  }
 }
 
 @media (max-width: 425px) {
