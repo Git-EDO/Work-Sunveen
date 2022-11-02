@@ -1457,7 +1457,7 @@ a.blue-cards-column:hover>div {
   padding-top: 30px;
 }
 
-.catalogue-blue-cards {
+.catalogue-blue-cards .blue-card-subtitle {
   font-size: 16px;
 }
 .catalogue-blue-cards span {
