@@ -57,11 +57,14 @@ if(promoLinks.length > 0) {
   })
 }
 
-promoPopup.addEventListener('click', (e) => {
-  if (!e.target.closest('.popup-body')) {
-    promoPopup.classList.remove('active');
-  }
-})
+if(promoPopup) {
+  promoPopup.addEventListener('click', (e) => {
+    if (!e.target.closest('.popup-body')) {
+      promoPopup.classList.remove('active');
+    }
+  })
+}
+
 
 
 // Слайдер на главной
