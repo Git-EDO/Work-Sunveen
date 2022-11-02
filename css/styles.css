@@ -1463,10 +1463,12 @@ a.blue-cards-column:hover>div {
 
 .catalogue-blue-cards .blue-cards-column {
   min-height: 140px;
+  /* padding: 30px 45px 40px 30px; */
 }
 
 .catalogue-blue-cards .blue-card-subtitle {
   font-size: 16px;
+  font-weight: 400;
 }
 .catalogue-blue-cards span {
   font-weight: 700;
