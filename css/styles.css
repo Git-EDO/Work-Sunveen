@@ -1457,6 +1457,13 @@ a.blue-cards-column:hover>div {
   padding-top: 30px;
 }
 
+.catalogue-blue-cards {
+  font-size: 16px;
+}
+.catalogue-blue-cards span {
+  font-weight: 700;
+}
+
 .catalogue-blue-cards .blue-cards-column img {
   position: absolute;
   width: 44px;
