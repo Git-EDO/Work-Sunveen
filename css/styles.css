@@ -1433,6 +1433,9 @@ a.blue-cards-column:hover>div {
 
 /* === CATALOGUE === */
 
+.catalogue-start-page {
+  height: 460px;
+}
 .catalogue-start-page-bg img {
   object-position: center center;
 }
@@ -1455,6 +1458,10 @@ a.blue-cards-column:hover>div {
 
 .catalogue-blue-cards .blue-cards-column:last-child {
   padding-top: 30px;
+}
+
+.catalogue-blue-cards .blue-cards-column {
+  min-height: 140px;
 }
 
 .catalogue-blue-cards .blue-card-subtitle {
