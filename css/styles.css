@@ -1634,13 +1634,6 @@ a.blue-cards-column:hover>div {
   box-shadow: 0px 4px 30px rgba(18, 25, 55, 0.15);
   border: 1px solid transparent;
 }
-.partners-item.active::after {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  content: url('../img/catalogue/logos/cursor.svg');
-
-}
 
 .partner-logo {
   width: 200px;
@@ -1931,10 +1924,12 @@ a.blue-cards-column:hover>div {
   flex: 0 0 50%;
 }
 .about-company-text span:first-child {
-  color: #FFD865;
+  color: #ffc92b;
+  font-weight: 700;
 }
 .about-company-text span {
   color: var(--orange);
+  font-weight: 700;
 }
 .about-company-text p:not(:first-child) {
   margin-top: 15px;
@@ -2729,6 +2724,9 @@ a.blue-cards-column:hover>div {
 
   .catalogue-start-page .start-page-body {
     padding-top: 60px;
+  }
+  .categories-item {
+    padding: 20px 10px;
   }
 
 }
