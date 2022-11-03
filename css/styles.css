@@ -907,7 +907,7 @@ a.blue-cards-column:hover>div {
 .actual-big-text {
   display: flex;
   flex-direction: column;
-  width: 315px;
+  width: 280px;
   z-index: 2;
 }
 
