@@ -1804,6 +1804,12 @@ a.blue-cards-column:hover>div {
   color: var(--title-color);
   margin-top: 10px;
 }
+.promo-price {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text-color);
+  margin-top: 10px;
+}
 .promo-description {
   font-size: 14px;
   color: var(--text-color);
