@@ -704,8 +704,6 @@ a.blue-cards-column:hover>div {
   margin-top: 40px;
 }
 
-.swiper-wrapper {}
-
 .popular-products .swiper-slide {
   display: flex;
   justify-content: center;
@@ -1874,6 +1872,135 @@ a.blue-cards-column:hover>div {
   display: block;
 }
 
+/* === ABOUT === */
+
+.about-start-page {
+  height: 460px;
+  position: relative;
+}
+
+.about-start-page .start-page-title {
+  font-size: 52px;
+  flex: 0 0 60%;
+  position: relative;
+}
+
+.about-start-page .start-page-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E7E5E3;
+  filter: blur(40px);
+  z-index: -1;
+}
+
+.about-start-page .start-page-bg-cover {
+  display: none;
+}
+
+.about-company {
+}
+.about-company-content {
+}
+.about-company-body {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+}
+.about-company-column:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+.about-company-column:last-child {
+  margin-top: 15px;
+}
+.about-company-column:last-child p {
+  margin-top: 15px;
+}
+.about-company-text {
+  flex: 0 0 50%;
+}
+.about-company-text p:not(:first-child) {
+  margin-top: 15px;
+}
+.about-company-photo {
+  flex: 0 0 45%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about-company-photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* === CERTIFICATES === */
+
+.certificates {
+  margin-top: 80px;
+}
+.certificates-swiper {
+  padding: 0 20px;
+}
+.certificates-swiper-slide {
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #DDE3FB;
+}
+.certificates-swiper-slide:hover::after {
+  position: absolute;
+  content: url('../img/about/zoom.svg');
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.certificates-swiper-slide.active:after {
+  position: absolute;
+  content: url('../img/about/zoom.svg');
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.certificate-item {
+  width: 100%;
+  height: 100%;
+}
+.certificate-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.certificates-swiper .navigation-arrow-left {
+  left: 0;
+}
+.certificates-swiper .navigation-arrow-right {
+  right: 0;
+}
+.about-company-body {
+  font-size: 16px;
+  line-height: 155%;
+  font-weight: 500;
+}
+
+
+
 @media (max-width: 1400px) {
   .footer-scroll-link {
     right: 0px;
@@ -2324,6 +2451,25 @@ a.blue-cards-column:hover>div {
   .promo-popup-body {
     max-width: 80%;
   }
+  .about-start-page .start-page-title {
+    font-size: 36px;
+    flex: 1 0 60%;
+  }
+  .about-start-page {
+    height: 724px;
+  }
+  .about-company-column:first-child {
+    flex-direction: column;
+  }
+  .about-company-photo {
+    margin-top: 40px;
+    flex: none;
+    width: 100%;
+    height: 500px;
+  }
+  .about-company-column:last-child {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2572,6 +2718,7 @@ a.blue-cards-column:hover>div {
   .catalogue-start-page .start-page-body {
     padding-top: 60px;
   }
+
 }
 
 @media (max-width: 425px) {
@@ -2584,16 +2731,25 @@ a.blue-cards-column:hover>div {
   .subcategories-start-page {
     height: 750px;
   }
+  .about-start-page {
+    height: 750px;
+  }
   .blue-cards {
     transform: translateY(-600px);
   }
   .subcategories-blue-cards {
     transform: translateY(-490px);
   }
+  .about-blue-cards {
+    transform: translateY(-490px);
+  }
 
   .after-cards-section {
     margin-top: -600px;
     padding-top: 80px;
+  }
+  .about-company.after-cards-section {
+    margin-top: -490px;
   }
 
   .blue-card-title {
@@ -2666,6 +2822,19 @@ a.blue-cards-column:hover>div {
   .promo-popup-title {
     font-size: 20px;
   }
+  .about-start-page .start-page-title {
+    font-size: 22px;
+  }
+  .about-company-photo {
+    margin-top: 30px;
+    height: 218px;
+  }
+  .about-company-column:last-child {
+    margin-top: 30px;
+  }
+  .about-company-body {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2675,9 +2844,15 @@ a.blue-cards-column:hover>div {
   .subcategories-blue-cards {
     transform: translateY(-490px);
   }
+  .about-blue-cards {
+    transform: translateY(-490px);
+  }
 
   .after-cards-section {
     margin-top: -570px;
     padding-top: 80px;
+  }
+  .about-company.after-cards-section {
+    margin-top: -490px;
   }
 }

@@ -144,6 +144,34 @@ const swiper = new Swiper('.our-works-swiper', {
   },
 })
 
+// Слайдер сертификатов
+
+const certificatesSwiper = new Swiper('.certificates-swiper', {
+
+  navigation: {
+    nextEl: '.navigation-arrow-right',
+    prevEl: '.navigation-arrow-left',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    }
+  }
+})
+
 // Карта
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -279,4 +307,20 @@ if (partnersLogos.length > 0) {
       }
     })
   })
+}
+
+// Сертификаты
+
+const certSwiper = document.querySelector('.certificates-swiper')
+
+if(certSwiper) {
+  $(document).ready(function() {
+    $('.certificate-item').magnificPopup({type:'image'});
+  });
+  
+  $('.certificate-swiper-slide').magnificPopup({
+    delegate: 'a',
+    type: 'image'
+    // other options
+  });
 }
