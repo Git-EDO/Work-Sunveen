@@ -406,8 +406,8 @@ li {
 .popup-close::after {
   content: '';
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 0px;
   width: 30px;
   height: 2px;
   background: #B3B3B3;
