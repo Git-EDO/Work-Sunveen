@@ -1930,6 +1930,12 @@ a.blue-cards-column:hover>div {
 .about-company-text {
   flex: 0 0 50%;
 }
+.about-company-text span:first-child {
+  color: #FFD865;
+}
+.about-company-text span {
+  color: var(--orange);
+}
 .about-company-text p:not(:first-child) {
   margin-top: 15px;
 }
