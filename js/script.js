@@ -247,33 +247,7 @@ if (phones.length > 0) {
   })
 }
 
-// Цветные изображения
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const images = new Array();
-
-//   function preloadImages(...images) {
-//     images.forEach((image, i) => {
-//       image = new Image();
-//       image.src = preloadImages.arguments[i];
-//     });
-//   };
-
-//   preloadImages(
-//     './img/catalogue/logos/logo1.png',
-//     './img/catalogue/logos/logo2.png',
-//     './img/catalogue/logos/logo3.png',
-//     './img/catalogue/logos/logo4.png',
-//     './img/catalogue/logos/logo5.png',
-//     './img/catalogue/logos/logo6.png',
-//     './img/catalogue/logos/logo7.png',
-//     './img/catalogue/logos/logo8.png',
-//     './img/catalogue/logos/logo9.png',
-//     './img/catalogue/logos/logo10.png',
-//     './img/catalogue/logos/logo11.png',
-//     './img/catalogue/logos/logo12.png'
-//   );
-// });
+// Управление логотипами
 
 const partnersLogos = document.querySelectorAll('.partners-item')
 const activePartnersLogo = document.querySelector('.active-partners-item')
@@ -324,3 +298,65 @@ if(certSwiper) {
     // other options
   });
 }
+
+
+
+
+
+const miniProductImgs = document.querySelectorAll('.product-mini-item')
+const zoomProductImg = document.querySelector('.products-zoom-img img')
+
+const zoomArrowLeft = document.querySelector('.products-zoom-img .navigation-arrow-left')
+const zoomArrowRight = document.querySelector('.products-zoom-img .navigation-arrow-right')
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  
+
+  if(miniProductImgs.length > 0) {
+
+    let i = 0;
+const miniImgs = Array.from(miniProductImgs)
+
+// Управление переключением фотографий зум-изображения
+
+zoomArrowRight.addEventListener('click', () => {
+  if(i >= miniImgs.length-1) {
+    i = 0
+  } else {
+    i++
+  }
+  miniProductImgs.forEach(el => el.classList.remove('active'))
+  miniImgs[i].classList.add('active')
+  zoomProductImg.src = miniImgs[i].querySelector('img').src
+})
+
+zoomArrowLeft.addEventListener('click', () => {
+  if(i <= 0) {
+    i = miniImgs.length-1
+  } else {
+    i--
+  }
+  miniProductImgs.forEach(el => el.classList.remove('active'))
+  miniImgs[i].classList.add('active')
+  zoomProductImg.src = miniImgs[i].querySelector('img').src
+})
+
+// Управление зум-изображением продукта
+
+    miniProductImgs[0].classList.add('active')
+    zoomProductImg.src = document.querySelector('.product-mini-item.active img').src
+
+    miniProductImgs.forEach(image => {
+      image.addEventListener('click', () => {
+        miniProductImgs.forEach(el => el.classList.remove('active'))
+        image.classList.add('active')
+        i = miniImgs.indexOf(image)
+        const thisImage = image.querySelector('img')
+        zoomProductImg.src = thisImage.src
+      })
+    })
+
+  }
+
+})
