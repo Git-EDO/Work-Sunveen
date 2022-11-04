@@ -65,6 +65,25 @@ if(promoPopup) {
   })
 }
 
+// Product popup
+
+const productBtn = document.querySelector('.product-description-btn')
+const productPopup = document.querySelector('.product-popup')
+
+if(productBtn) {
+  productBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    productPopup.classList.add('active')
+  })
+}
+
+if(productPopup) {
+  productPopup.addEventListener('click', (e) => {
+    if (!e.target.closest('.popup-body')) {
+      productPopup.classList.remove('active');
+    }
+  })
+}
 
 
 // Слайдер на главной
@@ -234,6 +253,18 @@ if (contactsHeaderScroll.length > 0) {
   })
 }
 
+// Скролл до технического описания
+
+const technicalDescScroll = document.querySelector('.technical-description-btn')
+
+if (technicalDescScroll) {
+  technicalDescScroll.addEventListener('click', (e) => {
+    e.preventDefault()
+    const technicalDescriptionText = document.querySelector('.technical-description-body')
+    technicalDescriptionText.scrollIntoView({ block: 'start', behavior: 'smooth' })
+  })
+}
+
 // Маска для телефонов
 
 const phones = document.querySelectorAll('.phone')
@@ -301,7 +332,7 @@ if(certSwiper) {
 
 
 
-
+// Зум-изображение товара
 
 const miniProductImgs = document.querySelectorAll('.product-mini-item')
 const zoomProductImg = document.querySelector('.products-zoom-img img')
@@ -311,12 +342,10 @@ const zoomArrowRight = document.querySelector('.products-zoom-img .navigation-ar
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  
+if(miniProductImgs.length > 0) {
 
-  if(miniProductImgs.length > 0) {
-
-    let i = 0;
-const miniImgs = Array.from(miniProductImgs)
+  let i = 0;
+  const miniImgs = Array.from(miniProductImgs)
 
 // Управление переключением фотографий зум-изображения
 

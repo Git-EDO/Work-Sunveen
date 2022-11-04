@@ -2178,16 +2178,152 @@ a.blue-cards-column:hover>div {
   background: linear-gradient(266.39deg, #FF9736 4.35%, #F58014 100%);
   box-shadow: 0px 4px 20px rgba(255, 123, 0, 0.3);
 }
+.technical-description li {
+  list-style: inherit;
+  margin-left: 20px;
+}
+.technical-description p {
+  margin-top: 30px;
+}
+.technical-description-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 145%;
+  color: var(--title-color);
+}
+.technical-description-body {
+  line-height: 155%;
+}
+.technical-description-table {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.technical-description-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.technical-description-name {
+}
+.technical-description-value {
+  text-align: right;
+  margin-left: 15px;
+}
+.tecnical-descriptrion-subtitle {
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+.sections-wrapper {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.sections-wrapper .container {
+  display: flex;
+}
+.sections-wrapper .feedback-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sections-wrapper .feedback-body {
+  max-width: 380px;
+  height: 444px;
+  padding: 20px;
+}
+.sections-wrapper .feedback-block {
+  margin-left: 60px;
+}
+.sections-wrapper .feedback-form input:not(:first-child) {
+  margin-left: 0px;
+}
+.sections-wrapper .feedback-form-btn {
+  margin-left: 0px;
+  margin-top: 18px;
+}
+.sections-wrapper .feedback-form input:not(:first-child) {
+  margin-top: 18px;
+}
+.sections-wrapper .before-footer-section {
+  margin-top: 0px;
+}
+.sections-wrapper .feedback-body-title {
+  font-size: 22px;
+}
+.sections-wrapper .feedback-body-subtitle {
+  font-size: 16px;
+}
 
+/* === PRODUCT POPUP === */
 
+.product-popup {
+  top: 0;
+  left: 0;
+
+}
+.product-popup-body {
+  width: 420px;
+}
+
+.product-btn {
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.product-popup-form {
+  margin-top: 20px;
+}
+
+.product-popup-form>input:not(:first-child) {
+  margin-top: 15px;
+}
+
+.product-popup-form>input {
+  width: 100%;
+}
+
+textarea {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #B3B3B3;
+  border-radius: 4px;
+  padding: 20px 17px;
+  resize: none;
+
+  height: 90px;
+  width: 100%;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 115%;
+  color: #8C8C8C;
+}
+
+textarea:hover {
+  border: 1px solid var(--orange);
+}
+
+textarea:focus {
+  border: 1px solid var(--orange);
+  outline: none;
+}
+
+textarea::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 115%;
+  color: #8C8C8C;
+}
 
 @media (max-width: 1400px) {
   .footer-scroll-link {
     right: 0px;
-  }
-
-  .catalogue-start-page-bg img {
-
   }
 }
 
@@ -2685,6 +2821,30 @@ a.blue-cards-column:hover>div {
     margin-top: 0px;
     width: 250px;
   }
+  .sections-wrapper .container {
+    flex-direction: column;
+  }
+  .sections-wrapper .feedback-body {
+    max-width: 100%;
+    padding: 60px 50px;
+    height: 482px;
+  }
+  .sections-wrapper .feedback-block {
+    margin-left: 0;
+  }
+  .sections-wrapper .before-footer-section {
+    margin-top: 80px;
+  }
+  .sections-wrapper {
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .sections-wrapper .feedback-body-title {
+    font-size: 24px;
+  }
+  .sections-wrapper .feedback-body-subtitle {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2995,6 +3155,37 @@ a.blue-cards-column:hover>div {
   .products-zoom-img .navigation-arrow {
     display: flex;
   }
+  .technical-description-title {
+    font-size: 16px;
+  }
+  .technical-description-body {
+    font-size: 12px;
+  }
+
+  .technical-description p {
+    margin-top: 20px;
+  }
+  .technical-description-table {
+    margin-top: 20px;
+  }
+  .technical-description-row {
+    margin-top: 6px;
+  }
+  .technical-description-value {
+    text-align: right;
+    margin-left: 15px;
+  }
+  .tecnical-descriptrion-subtitle {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+  .sections-wrapper .feedback-body-title {
+    font-size: 18px;
+  }
+  .sections-wrapper .feedback-body-subtitle {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -3071,6 +3262,9 @@ a.blue-cards-column:hover>div {
   }
 
   .header-popup-body {
+    width: 95%;
+  }
+  .product-popup-body {
     width: 95%;
   }
 
