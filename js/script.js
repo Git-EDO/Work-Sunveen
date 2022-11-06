@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
           iconLayout: 'default#image',
           iconImageHref: './img/map/geo.svg',
           iconImageSize: [40, 40],
-          iconImageOffset: [-13, -50],
+          iconImageOffset: [-13, -25],
         }
       )
   
