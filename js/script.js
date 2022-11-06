@@ -1,20 +1,25 @@
 const burger = document.querySelector('.header-burger')
 const mobileMenu = document.querySelector('.nav')
 const closeMenu = document.querySelector('.close-mobile-menu')
+const body = document.querySelector('body')
+const lockPaddingEls = document.querySelectorAll('.lock-padding')
 
 burger.addEventListener('click', (e) => {
+  bodyLock()
   burger.classList.add('active')
   mobileMenu.classList.add('active')
 })
 
 mobileMenu.addEventListener('click', (e) => {
   if (!e.target.closest('.nav .container')) {
+    bodyLock()
     mobileMenu.classList.remove('active')
     burger.classList.remove('active')
   }
 })
 
 closeMenu.addEventListener('click', (e) => {
+  bodyLock()
   mobileMenu.classList.remove('active')
   burger.classList.remove('active')
 })
@@ -27,18 +32,23 @@ const callPopupBtns = document.querySelectorAll('.call-btn')
 
 callPopupBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    bodyLock()
     headerPopup.classList.add('active')
   })
 })
 
 closePopup.forEach((btn) => {
   btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    bodyLock()
     btn.closest('.popup').classList.remove('active')
   })
 })
 
 headerPopup.addEventListener('click', (e) => {
   if (!e.target.closest('.popup-body')) {
+    bodyLock()
     headerPopup.classList.remove('active')
   }
 })
@@ -52,6 +62,7 @@ if(promoLinks.length > 0) {
   promoLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault()
+      bodyLock()
       promoPopup.classList.add('active')
     })
   })
@@ -60,6 +71,7 @@ if(promoLinks.length > 0) {
 if(promoPopup) {
   promoPopup.addEventListener('click', (e) => {
     if (!e.target.closest('.popup-body')) {
+      bodyLock()
       promoPopup.classList.remove('active');
     }
   })
@@ -73,6 +85,7 @@ const productPopup = document.querySelector('.product-popup')
 if(productBtn) {
   productBtn.addEventListener('click', (e) => {
     e.preventDefault()
+    bodyLock()
     productPopup.classList.add('active')
   })
 }
@@ -80,11 +93,30 @@ if(productBtn) {
 if(productPopup) {
   productPopup.addEventListener('click', (e) => {
     if (!e.target.closest('.popup-body')) {
+      bodyLock()
       productPopup.classList.remove('active');
     }
   })
 }
 
+// Body lock
+
+function bodyLock() {
+
+  const lockPaddingValue = window.innerWidth - document.querySelector('body').offsetWidth + 'px';
+
+  if(body.classList.contains('lock')) {
+    body.classList.remove('lock');
+    lockPaddingEls.forEach(element => {
+      element.style.paddingRight = 0
+    })
+  } else {
+    body.classList.add('lock');
+    lockPaddingEls.forEach(element => {
+      element.style.paddingRight = lockPaddingValue
+    })
+  }
+}
 
 // Слайдер на главной
 
@@ -189,6 +221,45 @@ const certificatesSwiper = new Swiper('.certificates-swiper', {
       spaceBetween: 20,
     }
   }
+})
+
+// Слайдер комплексных работ
+
+// Слайдер на главной
+
+let complexSwiper = new Swiper('.complex-work-swiper', {
+  // Optional parameters
+  slidesPerView: 4,
+  slidesPerGroup: 4,
+  spaceBetween: 20,
+  pagination: {
+    el: '.complex-work-swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    576: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    768: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+    992: {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+    },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.navigation-arrow-right',
+    prevEl: '.navigation-arrow-left',
+  },
 })
 
 // Карта
@@ -389,3 +460,76 @@ zoomArrowLeft.addEventListener('click', () => {
   }
 
 })
+
+// Ленивая загрузка изображений
+
+const lazyImages = document.querySelectorAll('img[data-src]')
+const windowHeight = document.documentElement.clientHeight;
+
+let lazyImagesPositions = [];
+
+if(lazyImages.length > 0) {
+  lazyImages.forEach(img => {
+    if(img.dataset.src) {
+      lazyImagesPositions.push(img.getBoundingClientRect().top + scrollY)
+      lazyScrollCheck()
+    }
+  })
+};
+
+window.addEventListener('scroll', lazyScroll);
+
+function lazyScroll() {
+  if(document.querySelectorAll('img[data-src]').length > 0) {
+    lazyScrollCheck()
+  }
+};
+
+function lazyScrollCheck() {
+  let imgIndex = lazyImagesPositions.findIndex (
+    item => scrollY > item - windowHeight
+  );
+  if(imgIndex >= 0) {
+    if(lazyImages[imgIndex].dataset.src) {
+      lazyImages[imgIndex].src = lazyImages[imgIndex].dataset.src;
+      lazyImages[imgIndex].removeAttribute('data-src');
+    }
+    delete lazyImagesPositions[imgIndex];
+  }
+};
+
+// Галерея для изображений
+
+if(lazyImages.length > 0) {
+  $(document).ready(function() {
+    $('.gallery-item').magnificPopup({type:'image'});
+  });
+  
+  // $('.certificate-swiper-slide').magnificPopup({
+  //   delegate: 'a',
+  //   type: 'image'
+  //   // other options
+  // });
+}
+
+// Загрузка дополнительных изображений
+
+const loadMore2 = document.querySelector('.load-more-btn2')
+const loadMore3 = document.querySelector('.load-more-btn3')
+
+if(loadMore2) {
+  loadMore2.addEventListener('click', (e) => {
+    e.preventDefault()
+    document.querySelector('.second-gallery-grid').style.display = 'grid'
+    loadMore2.closest('.load-more-button').style.display = 'none'
+    loadMore3.closest('.load-more-button').style.display = 'flex'
+  })
+}
+
+if(loadMore3) {
+  loadMore3.addEventListener('click', (e) => {
+    e.preventDefault()
+    document.querySelector('.third-gallery-grid').style.display = 'grid'
+    loadMore3.closest('.load-more-button').style.display = 'none'
+  })
+}

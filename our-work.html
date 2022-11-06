@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Sunveen - Тепло домашнего Солнца</title>
+</head>
+<body class="lock-padding">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-first-row">
+        <div class="container">
+          <div class="header-logo">
+            <a href="#">
+              <img src="./img/header/logo.svg" alt="logo">
+            </a>
+          </div>
+          <div class="header-address">
+            <img src="./img/header/geo-icon.svg" alt="icon">
+            Калининград, Советский проспект, дом 202
+          </div>
+          <div class="header-email">
+            <img src="./img/header/mail-icon.svg" alt="icon">
+            <a href="mailto:info@sunveen.ru" class="dark-text-link">info@sunveen.ru</a>
+          </div>
+          <div class="header-tel-contacts">
+            <a href="tel:+79637384240">
+              <img src="./img/header/phone-icon.svg" alt="icon">
+            </a>
+            <div class="header-phones">
+              <div class="header-phone">
+                <a href="tel:+79637384240" class="dark-text-link">+7 963 738-42-40</a>
+              </div>
+              <div class="header-phone">
+                <a href="tel:+79062379585" class="dark-text-link">+7 906 237-95-85</a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn call-btn">Заказать звонок</a>
+          <div class="header-burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="container">
+          <div class="mobile-menu-logo">
+            <a href="#">
+              <img src="./img/header/logo.svg" alt="logo">
+            </a>
+            <div class="close-mobile-menu"></div>
+          </div>
+          <div class="mobile-menu-address">
+            <img src="./img/header/geo-icon.svg" alt="icon">
+            Калининград, Советский проспект, дом 202
+          </div>
+            <ul class="nav-menu">
+              <li class="has-submenu">
+                <a href="#">Каталог товаров</a>
+                <div class="nav-menu-wrapper">
+                  <ul class="submenu-list">
+                    <li><a href="#">Солнечные панели</a></li>
+                    <li><a href="#">Ветрогенераторы</a></li>
+                    <li><a href="#">Инверторы</a></li>
+                    <li><a href="#">Контроллеры</a></li>
+                    <li><a href="#">Аккумуляторы</a></li>
+                    <li><a href="#">Солнечные коллекторы</a></li>
+                    <li><a href="#">Сплит-системы</a></li>
+                    <li><a href="#">Баки</a></li>
+                    <li><a href="#">Тепловые насосы</a></li>
+                    <li><a href="#">Кондиционеры</a></li>
+                    <li><a href="#">ИК-обогреватели</a></li>
+                    <li><a href="#">Насосы</a></li>
+                    <li><a href="#">Комплектующие и аксессуары</a></li>
+                    <li><a href="#">Зарядные станции для электротранспорта</a></li>
+                    <li><a href="#">Видеонаблюдение и сигнализация</a></li>
+                    <li><a href="#">Окна ПВХ</a></li>
+                  </ul>
+              </div>
+              </li>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Действующие акции</a></li>
+              <li><a href="#">Наши работы</a></li>
+              <li><a href="#">Наши партнёры</a></li>
+              <li><a class="contacts-scroll" href="#">Контакты</a></li>
+              <li><a href="#">О компании</a></li>
+            </ul>
+            <div class="mobile-menu-email">
+              <img src="./img/header/mail-icon.svg" alt="icon">
+              <a href="mailto:info@sunveen.ru" class="dark-text-link">info@sunveen.ru</a>
+            </div>
+            <div class="mobile-menu-tel-contacts">
+              <img src="./img/header/phone-icon.svg" alt="icon">
+              <div class="mobile-menu-phones">
+                <div class="mobile-menu-phone">
+                  <a href="tel:+79637384240" class="dark-text-link">+7 963 738-42-40</a>
+                </div>
+                <div class="mobile-menu-phone">
+                  <a href="tel:+79062379585" class="dark-text-link">+7 906 237-95-85</a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn mobile-call-btn call-btn">Заказать звонок</a>
+        </div>
+      </nav>
+      <div class="header-popup popup">
+        <div class="header-popup-body popup-body">
+          <div class="popup-close"></div>
+          <div class="popup-title">
+            Заказать звонок
+          </div>
+          <div class="popup-subtitle">
+            Заполните форму, наш менеджер свяжется с Вами в ближайшее время
+          </div>
+          <form class="header-popup-form">
+            <input type="text" placeholder="Ваше имя" name="name" required>
+            <input type="text" placeholder="Ваш телефон" name="phone" class="phone" required>
+            <div class="checkbox-personal">
+              <input type="checkbox" value="yes" name="personal-data" id="header-personal" required>
+              <label for="header-personal">Согласен на обработку <a href="#">персональных данных</a></label>
+            </div>
+            <button class="btn header-btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+
+      <section class="start-page our-work-start-page">
+        <div class="start-page-bg">
+
+          <img src="./img/our-work-page/bg-image.jpg" alt="image">
+        </div>
+        <div class="container">
+          <div class="start-page-body">
+            <div class="start-page-title">
+              <p>
+                Может быть не всегда удачные фотографы,<br>но всегда профессиональные монтажники ☻
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blue-cards our-work-blue-cards">
+        <div class="container">
+          <div class="blue-cards-row">
+            <div class="blue-cards-column">
+              <div class="blue-card-subtitle">
+                Кондиционеры и сплит-системы
+              </div>
+              <div class="blue-card-title">
+                от <span>18 500 ₽</span>
+              </div>
+            </div>
+            <div class="blue-cards-column">
+              <div class="blue-card-subtitle">
+                Автономные электростанции 220 вольт
+              </div>
+              <div class="blue-card-title">
+                от <span>22 400 ₽</span>
+              </div>
+            </div>
+            <div class="blue-cards-column">
+              <div class="blue-card-subtitle">
+                Зарядные электростанции для электроавтомобилей
+              </div>
+              <div class="blue-card-title">
+                от <span>75 000 ₽</span>
+              </div>
+            </div>
+            <div class="blue-cards-column">
+              <div class="blue-card-subtitle">
+                Система солнечных коллекторов, обеспечение ГВС и отопления
+              </div>
+              <div class="blue-card-title">
+                от <span>150 300 ₽</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="complex-work after-cards-section">
+        <div class="container">
+          <div class="breadcrumbs">
+            <a href="#" class="breadcrumbs-item first-breadcrumbs-item">
+              Главная
+            </a>
+            <a href="#" class="breadcrumbs-item">
+              Наши работы
+            </a>
+          </div>
+          <div class="complex-work-content">
+            <div class="section-title">
+              <h2>
+                Комплексные работы с оценкой стоимости
+              </h2>
+            </div>
+            <div class="complex-work-swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="complex-work-slide swiper-slide">
+                  <div class="complex-work-img">
+
+                  </div>
+                  <div class="complex-work-name">
+                    Название комплексной работы
+                  </div>
+                  <div class="complex-work-price">
+                    99 999 ₽
+                  </div>
+                </div>
+                <div class="complex-work-slide swiper-slide">
+                  <div class="complex-work-img">
+
+                  </div>
+                  <div class="complex-work-name">
+                    Название комплексной работы
+                  </div>
+                  <div class="complex-work-price">
+                    99 999 ₽
+                  </div>
+                </div>
+                <div class="complex-work-slide swiper-slide">
+                  <div class="complex-work-img">
+
+                  </div>
+                  <div class="complex-work-name">
+                    Название комплексной работы
+                  </div>
+                  <div class="complex-work-price">
+                    99 999 ₽
+                  </div>
+                </div>
+                <div class="complex-work-slide swiper-slide">
+                  <div class="complex-work-img">
+
+                  </div>
+                  <div class="complex-work-name">
+                    Название комплексной работы
+                  </div>
+                  <div class="complex-work-price">
+                    99 999 ₽
+                  </div>
+                </div>
+                <div class="complex-work-slide swiper-slide">
+                  <div class="complex-work-img">
+
+                  </div>
+                  <div class="complex-work-name">
+                    Название комплексной работы
+                  </div>
+                  <div class="complex-work-price">
+                    99 999 ₽
+                  </div>
+                </div>
+                <div class="complex-work-slide swiper-slide">
+                  <div class="complex-work-img">
+
+                  </div>
+                  <div class="complex-work-name">
+                    Название комплексной работы
+                  </div>
+                  <div class="complex-work-price">
+                    99 999 ₽
+                  </div>
+                </div>
+                <div class="complex-work-slide swiper-slide">
+                  <div class="complex-work-img">
+
+                  </div>
+                  <div class="complex-work-name">
+                    Название комплексной работы
+                  </div>
+                  <div class="complex-work-price">
+                    99 999 ₽
+                  </div>
+                </div>
+                <div class="complex-work-slide swiper-slide">
+                  <div class="complex-work-img">
+
+                  </div>
+                  <div class="complex-work-name">
+                    Название комплексной работы
+                  </div>
+                  <div class="complex-work-price">
+                    99 999 ₽
+                  </div>
+                </div>
+              </div>
+              <div class="complex-work-swiper-pagination"></div>
+              <div class="navigation-arrow navigation-arrow-left">
+                <img src="./img/popular/arrow-left.svg" alt="icon">
+              </div>
+              <div class="navigation-arrow navigation-arrow-right">
+                <img src="./img/popular/arrow-right.svg" alt="icon">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="work-gallery">
+        <div class="container">
+          <div class="section-title">
+            <h2>
+              Наши работы
+            </h2>
+          </div>
+
+          <div class="gallery-grid first-gallery-grid">
+            <a href="./img/our-work-page/gallery/image001.jpg" class="gallery-item gallery-item001">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image001.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image002.jpg" class="gallery-item gallery-item002">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image002.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image003.jpg" class="gallery-item gallery-item003">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image003.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image004.jpg" class="gallery-item gallery-item004">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image004.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image005.jpg" class="gallery-item gallery-item005">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image005.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image006.jpg" class="gallery-item gallery-item006">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image006.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image007.jpg" class="gallery-item gallery-item007">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image007.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image008.jpg" class="gallery-item gallery-item008">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image008.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image009.jpg" class="gallery-item gallery-item009">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image009.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image010.jpg" class="gallery-item gallery-item010">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image010.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image011.jpg" class="gallery-item gallery-item011">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image011.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image012.jpg" class="gallery-item gallery-item012">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image012.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image013.jpg" class="gallery-item gallery-item013">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image013.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image014.jpg" class="gallery-item gallery-item014">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image014.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image015.jpg" class="gallery-item gallery-item015">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image015.jpg" alt="image">
+            </a>
+          </div>
+          <div class="load-more-button">
+            <a href="#" class="btn load-more-btn load-more-btn2">Показать ещё</a>
+          </div>
+          <div class="gallery-grid second-gallery-grid">
+            <a href="./img/our-work-page/gallery/image016.jpg" class="gallery-item gallery-item016">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image016.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image017.jpg" class="gallery-item gallery-item017">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image017.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image018.jpg" class="gallery-item gallery-item018">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image018.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image019.jpg" class="gallery-item gallery-item019">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image019.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image020.jpg" class="gallery-item gallery-item020">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image020.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image021.jpg" class="gallery-item gallery-item021">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image021.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image022.jpg" class="gallery-item gallery-item022">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image022.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image023.jpg" class="gallery-item gallery-item023">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image023.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image024.jpg" class="gallery-item gallery-item024">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image024.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image025.jpg" class="gallery-item gallery-item025">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image025.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image026.jpg" class="gallery-item gallery-item026">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image026.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image027.jpg" class="gallery-item gallery-item027">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image027.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image028.jpg" class="gallery-item gallery-item028">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image028.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image029.jpg" class="gallery-item gallery-item029">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image029.jpg" alt="image">
+            </a>
+          </div>
+          <div class="load-more-button third-gallery-button">
+            <a href="#" class="btn load-more-btn load-more-btn3">Показать ещё</a>
+          </div>
+          <div class="gallery-grid third-gallery-grid">
+            <a href="./img/our-work-page/gallery/image030.jpg" class="gallery-item gallery-item030">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image030.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image031.jpg" class="gallery-item gallery-item031">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image031.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image032.jpg" class="gallery-item gallery-item032">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image032.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image033.jpg" class="gallery-item gallery-item033">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image033.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image034.jpg" class="gallery-item gallery-item034">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image034.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image035.jpg" class="gallery-item gallery-item035">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image035.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image036.jpg" class="gallery-item gallery-item036">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image036.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image037.jpg" class="gallery-item gallery-item037">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image037.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image038.jpg" class="gallery-item gallery-item038">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image038.jpg" alt="image">
+            </a>
+            <a href="./img/our-work-page/gallery/image039.jpg" class="gallery-item gallery-item039">
+              <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <img src="./img/1x1.png" data-src="./img/our-work-page/gallery/image039.jpg" alt="image">
+            </a>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    <footer class="footer our-work-footer">
+      <div class="footer-bg">
+        <div class="footer-bg-img">
+          <img src="./img/footer/footer-bg-jpg.jpg" alt="bg">
+        </div>
+        <div class="footer-bg-cover"></div>
+      </div>
+      <div class="container">
+        <div class="footer-wrapper">
+            <a href="#" class="footer-logo">
+              <img src="./img/footer/footer-logo.svg" alt="logo">
+            </a>
+            <div class="footer-links-column">
+              <ul class="footer-links">
+                <li class="footer-header-links">каталог товаров</li>
+                <li><a href="#">Солнечные панели</a></li>
+                <li><a href="#">Инверторы</a></li>
+                <li><a href="#">Ветрогенераторы</a></li>
+                <li><a href="#">Контроллеры</a></li>
+                <li><a href="#">Аккумуляторы</a></li>
+                <li><a href="#">Солнечные коллекторы</a></li>
+                <li><a href="#">Сплит-системы</a></li>
+                <li><a href="#">Баки</a></li>
+                <li><a href="#">Тепловые насосы</a></li>
+                <li><a href="#">Кондиционеры</a></li>
+                <li><a href="#">ИК-обогреватели</a></li>
+                <li><a href="#">Насосы</a></li>
+                <li><a href="#">Комплектующие и аксессуары</a></li>
+                <li><a href="#">Зарядные станции для электротранспорта</a></li>
+                <li><a href="#">Видеонаблюдение и сигнализация</a></li>
+                <li><a href="#">Окна ПВХ</a></li>
+              </ul>
+              <ul class="footer-links">
+                <li class="footer-header-links">Покупателям</li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Категории товаров</a></li>
+                <li><a href="#">Действующие акции</a></li>
+                <li><a href="#">Наши работы</a></li>
+                <li><a href="#">Наши партнёры</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О компании</a></li>
+              </ul>
+              <ul class="footer-links">
+                <li class="footer-header-links">контактные телефоны</li>
+                <li>
+                  Мобильные тел.:
+                  <br>
+                  <a href="tel:+7 (963) 738-42-40">+7 (963) 738-42-40</a>
+                  <br>
+                  <a href="tel:+7 (906) 237-95-85">+7 (906) 237-95-85</a>
+                </li>
+                <li>
+                  Городские тел.:
+                  <br>
+                  <a href="tel:+7 (4012) 37-42-40">+7 (4012) 37-42-40</a>
+                  <br>
+                  <a href="tel:+7 (4012) 37-95-85">+7 (4012) 37-95-85</a>
+                </li>
+                <li class="footer-header-links">график работы</li>
+                <li>
+                  Пн.-пт.: 09:00-18:00 ч.,
+                  <br>
+                  сб.-вс.: выходной
+                </li>
+                <li class="footer-header-links">электронная почта</li>
+                <a href="mailto:info@sunveen.ru">info@sunveen.ru</a>
+                <li class="footer-header-links">Офис</li>
+                <li>Калининград, Советский проспект, дом 202</li>
+              </ul>
+          </div>
+          <div class="footer-scroll-link">
+            <img src="./img/footer/arrow-top.svg" alt="icon">
+          </div>
+        </div>
+        <div class="footer-text">
+            <p>© ООО «Берег-Плюс», 2022г.</p>
+            <p><a href="#">Политика конфиденциальности</a></p>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<ваш API-ключ>"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="./js/swiper-bundle.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
