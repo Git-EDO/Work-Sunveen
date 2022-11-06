@@ -324,6 +324,20 @@ if (contactsHeaderScroll.length > 0) {
   })
 }
 
+// Скролл до партнёров
+
+const partnersHeaderScroll = document.querySelectorAll('.partners-scroll')
+
+if (partnersHeaderScroll.length > 0) {
+  partnersHeaderScroll.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault()
+      const partnersSection = document.getElementById('partners')
+      partnersSection.scrollIntoView({ block: 'start', behavior: 'smooth' })
+    })
+  })
+}
+
 // Скролл до технического описания
 
 const technicalDescScroll = document.querySelector('.technical-description-btn')
