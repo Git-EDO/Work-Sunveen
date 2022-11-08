@@ -77,6 +77,30 @@ if(promoPopup) {
   })
 }
 
+// Complex work popup
+
+const complexLinks = document.querySelectorAll('.complex-work-slide')
+const complexPopup = document.querySelector('.complex-popup')
+
+if(complexLinks.length > 0) {
+  complexLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault()
+      bodyLock()
+      complexPopup.classList.add('active')
+    })
+  })
+}
+
+if(complexPopup) {
+  complexPopup.addEventListener('click', (e) => {
+    if (!e.target.closest('.popup-body')) {
+      bodyLock()
+      complexPopup.classList.remove('active');
+    }
+  })
+}
+
 // Product popup
 
 const productBtn = document.querySelector('.product-description-btn')

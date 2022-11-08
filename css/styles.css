@@ -1991,7 +1991,7 @@ a.blue-cards-column:hover>div {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
 }
 .certificates-swiper .navigation-arrow-left {
@@ -2357,13 +2357,14 @@ textarea::placeholder {
 
 .our-work-blue-cards .blue-card-subtitle {
   font-weight: 400;
+  font-size: 16px;
 }
 .our-work-blue-cards .blue-card-title {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 16px;
 }
 .our-work-blue-cards .blue-card-title span {
-  font-size: 32px;
+  font-size: 18px;
   line-height: 145%;
 }
 
@@ -2421,6 +2422,49 @@ textarea::placeholder {
   text-align: center;
   bottom: 50px;
   margin-top: 30px;
+}
+
+/* === COMPLEX POPUP === */
+
+.complex-popup {
+  top: 0;
+  left: 0;
+}
+.complex-popup-body {
+  max-height: calc(100vh - 100px);
+  max-width: 780px;
+  margin: 50px 0;
+}
+.complex-popup-wrapper {
+  height: 100%;
+  overflow-y: auto;
+}
+.complex-popup-title {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 125%;
+  color: var(--title-color);
+}
+.complex-popup-text {
+  margin-top: 20px;
+  font-weight: 400;
+}
+.complex-popup-image {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.complex-popup-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 
@@ -3213,6 +3257,9 @@ textarea::placeholder {
   .promo-popup-body {
     max-width: 80%;
   }
+  .complex-popup-body {
+    max-width: 80%;
+  }
   .about-start-page .start-page-title {
     font-size: 36px;
     flex: 1 0 60%;
@@ -3412,7 +3459,13 @@ textarea::placeholder {
   .promo-popup-title {
     font-size: 24px;
   }
+  .complex-popup-title {
+    font-size: 24px;
+  }
   .promo-popup-image {
+    height: 300px;
+  }
+  .complex-popup-image {
     height: 300px;
   }
 }
@@ -3688,10 +3741,10 @@ textarea::placeholder {
     font-size: 14px;
   }
   .our-work-blue-cards .blue-card-title {
-    font-size: 20px;
+    font-size: 16px;
   }
   .our-work-blue-cards .blue-card-title span {
-    font-size: 26px;
+    font-size: 18px;
   }
   .complex-work-swiper-pagination {
     display: none;
@@ -3851,7 +3904,13 @@ textarea::placeholder {
   .promo-popup-body {
     max-width: 95%;
   }
+  .complex-popup-body {
+    max-width: 95%;
+  }
   .promo-popup-title {
+    font-size: 20px;
+  }
+  .complex-popup-title {
     font-size: 20px;
   }
   .about-start-page .start-page-title {
