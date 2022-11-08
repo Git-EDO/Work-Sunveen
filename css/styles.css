@@ -1897,7 +1897,7 @@ a.blue-cards-column:hover>div {
 }
 
 .about-start-page .start-page-bg-cover {
-  display: none;
+  /* display: none; */
 }
 
 .about-company {
