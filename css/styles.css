@@ -699,7 +699,7 @@ a.blue-cards-column:hover>div {
   text-align: center;
 }
 .section-subtitle {
-  margin: 15px auto 0 auto;
+  margin: 0 auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 155%;
@@ -1656,6 +1656,9 @@ a.blue-cards-column:hover>div {
 .subcategories-start-page {
   height: 460px;
 }
+.subcategories-catalogue .section-title h2 {
+  padding-bottom: 15px;
+}
 
 .subcategories-start-page-bg .start-page-bg-cover {
   background: linear-gradient(90.81deg, rgba(255, 255, 255, 0.95) 10.34%, rgba(255, 255, 255, 0.855) 35.66%, rgba(255, 255, 255, 0.665) 55.37%, rgba(255, 255, 255, 0.114) 73.51%, rgba(255, 255, 255, 0) 90.86%);
@@ -1673,7 +1676,7 @@ a.blue-cards-column:hover>div {
 }
 
 .subcategories-catalogue-grid {
-  margin-top: 40px;
+  margin-top: 25px;
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -2363,10 +2366,10 @@ textarea::placeholder {
 }
 .our-work-blue-cards .blue-card-title {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 22px;
 }
 .our-work-blue-cards .blue-card-title span {
-  font-size: 18px;
+  font-size: 32px;
   line-height: 145%;
 }
 
@@ -3748,10 +3751,10 @@ textarea::placeholder {
     font-size: 14px;
   }
   .our-work-blue-cards .blue-card-title {
-    font-size: 16px;
+    font-size: 20px;
   }
   .our-work-blue-cards .blue-card-title span {
-    font-size: 18px;
+    font-size: 26px;
   }
   .complex-work-swiper-pagination {
     display: none;
