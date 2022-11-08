@@ -542,32 +542,22 @@ if(lazyImages.length > 0) {
   $(document).ready(function() {
     $('.gallery-item').magnificPopup({type:'image'});
   });
-  
-  // $('.certificate-swiper-slide').magnificPopup({
-  //   delegate: 'a',
-  //   type: 'image'
-  //   // other options
-  // });
 }
 
 // Загрузка дополнительных изображений
 
-const loadMore2 = document.querySelector('.load-more-btn2')
-const loadMore3 = document.querySelector('.load-more-btn3')
+const loadMoreBtn = document.querySelector('.load-more-btn')
 
-if(loadMore2) {
-  loadMore2.addEventListener('click', (e) => {
+if(loadMoreBtn) {
+  loadMoreBtn.addEventListener('click', (e) => {
     e.preventDefault()
-    document.querySelector('.second-gallery-grid').style.display = 'grid'
-    loadMore2.closest('.load-more-button').style.display = 'none'
-    loadMore3.closest('.load-more-button').style.display = 'flex'
-  })
-}
-
-if(loadMore3) {
-  loadMore3.addEventListener('click', (e) => {
-    e.preventDefault()
-    document.querySelector('.third-gallery-grid').style.display = 'grid'
-    loadMore3.closest('.load-more-button').style.display = 'none'
+    hiddenGalleriesArr = Array.from(document.querySelectorAll('.gallery-hidden'))
+    console.log(hiddenGalleriesArr)
+    if(hiddenGalleriesArr.length > 1) {
+      hiddenGalleriesArr[0].classList.remove('gallery-hidden')
+    } else if(hiddenGalleriesArr.length = 1) {
+      hiddenGalleriesArr[0].classList.remove('gallery-hidden')
+      loadMoreBtn.closest('.load-more-button').style.display = 'none'
+    }
   })
 }

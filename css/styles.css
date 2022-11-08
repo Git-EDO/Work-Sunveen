@@ -2495,7 +2495,6 @@ textarea::placeholder {
 }
 
 .second-gallery-grid {
-  display: none;
   grid-template-areas: 
   "gallery-item016 gallery-item017 gallery-item018 gallery-item019"
   "gallery-item020 gallery-item021 gallery-item021 gallery-item022"
@@ -2504,7 +2503,6 @@ textarea::placeholder {
   "gallery-item024 gallery-item028 gallery-item028 gallery-item029";
 }
 .third-gallery-grid {
-  display: none;
   grid-template-areas:
   "gallery-item030 gallery-item031 gallery-item031 gallery-item031"
   "gallery-item032 gallery-item031 gallery-item031 gallery-item031"
@@ -2526,7 +2524,9 @@ textarea::placeholder {
 
   background-color: #8C8C8C;
 }
-
+.gallery-hidden {
+  display: none;
+}
 .gallery-item img {
   position: absolute;
   top: 0;
