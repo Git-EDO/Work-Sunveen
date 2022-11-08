@@ -1458,13 +1458,6 @@ a.blue-cards-column:hover>div {
   transform: none;
 }
 
-.subcategories-start-page .start-page-title p:last-child {
-  color: var(--text-color);
-  font-weight: 500;
-  font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
 .catalogue-start-page .start-page-title {
   font-size: 36px;
