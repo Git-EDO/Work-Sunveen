@@ -698,6 +698,15 @@ a.blue-cards-column:hover>div {
   color: var(--title-color);
   text-align: center;
 }
+.section-subtitle {
+  margin: 15px auto 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 155%;
+  color: var(--text-color);
+  text-align: center;
+  width: 60%;
+}
 
 .popular-items-body {
   position: relative;
@@ -3386,6 +3395,11 @@ textarea::placeholder {
   .gallery-item032 {
     height: 400px;
   }
+
+  .section-subtitle {
+    font-size: 14px;
+    width: 80%;
+}
 }
 
 @media (max-width: 768px) {
@@ -3925,6 +3939,10 @@ textarea::placeholder {
   }
   .about-company-body {
     font-size: 12px;
+  }
+  .section-subtitle {
+    font-size: 14px;
+    width: 95%;
   }
 }
 

@@ -174,7 +174,7 @@ let mainSwiper = new Swiper('.swiper', {
   },
 })
 
-// 3D карусель
+// 3D карусель на главной
 
 const swiper = new Swiper('.our-works-swiper', {
   effect: 'coverflow',
@@ -248,8 +248,6 @@ const certificatesSwiper = new Swiper('.certificates-swiper', {
 })
 
 // Слайдер комплексных работ
-
-// Слайдер на главной
 
 let complexSwiper = new Swiper('.complex-work-swiper', {
   // Optional parameters
@@ -387,7 +385,7 @@ if (phones.length > 0) {
   })
 }
 
-// Управление логотипами
+// Управление логотипами партнёров
 
 const partnersLogos = document.querySelectorAll('.partners-item')
 const activePartnersLogo = document.querySelector('.active-partners-item')
