@@ -67,6 +67,10 @@ li {
 
   font-size: 15px;
   font-weight: 500;
+  transition: 0.5s ease;
+}
+.header-address:hover {
+  color: rgba(65, 65, 65, 0.7);
 }
 
 .header-address img {
