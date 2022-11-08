@@ -435,13 +435,16 @@ if(certSwiper) {
   $('.certificate-swiper-slide').magnificPopup({
     delegate: 'a',
     type: 'image'
-    // other options
   });
 }
 
 
 
 // Зум-изображение товара
+
+/* ==
+Фотографии (любое количество) товара грузим в 'product-mini-wrapper' в 'product-mini-item'
+== */
 
 const miniProductImgs = document.querySelectorAll('.product-mini-item')
 const zoomProductImg = document.querySelector('.products-zoom-img img')
@@ -546,13 +549,19 @@ if(lazyImages.length > 0) {
 
 // Загрузка дополнительных изображений
 
+/* == 
+Расширение галереи можно делать двумя способами:
+1. Добавлять фотографии в третью галерею (или любую другую)
+2. Либо создавать новую сетку 'gallery-grid' с классом 'gallery-hidden' чтобы она не грузилась сразу
+3. В дальнейшем кнопка дополнительной порции фоток будет обходить массив галерей и добавлять секции по одной
+ ==  */
+
 const loadMoreBtn = document.querySelector('.load-more-btn')
 
 if(loadMoreBtn) {
   loadMoreBtn.addEventListener('click', (e) => {
     e.preventDefault()
     hiddenGalleriesArr = Array.from(document.querySelectorAll('.gallery-hidden'))
-    console.log(hiddenGalleriesArr)
     if(hiddenGalleriesArr.length > 1) {
       hiddenGalleriesArr[0].classList.remove('gallery-hidden')
     } else if(hiddenGalleriesArr.length = 1) {
