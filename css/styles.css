@@ -1642,11 +1642,16 @@ a.blue-cards-column:hover > div {
   );
   transform: none;
 }
-
+.subcategories-blue-cards {
+  transform: translateY(0);
+  margin-top: 30px;
+}
 .subcategories-blue-cards .blue-card-subtitle span {
   font-weight: 700;
 }
-
+.subcategories-catalogue {
+  margin-top: 80px;
+}
 .subcategories-catalogue-content {
   margin-top: 40px;
 }
@@ -3352,6 +3357,9 @@ textarea::placeholder {
     font-size: 14px;
     width: 80%;
   }
+  .subcategories-blue-cards {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
@@ -3758,6 +3766,9 @@ textarea::placeholder {
   .gallery-item032 {
     height: 100%;
   }
+  .subcategories-blue-cards {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 425px) {
@@ -3780,7 +3791,7 @@ textarea::placeholder {
     transform: translateY(-600px);
   }
   .subcategories-blue-cards {
-    transform: translateY(-490px);
+    transform: translateY(0);
   }
   .about-blue-cards {
     transform: translateY(-490px);
@@ -3903,7 +3914,7 @@ textarea::placeholder {
     transform: translateY(-570px);
   }
   .subcategories-blue-cards {
-    transform: translateY(-490px);
+    transform: translateY(0);
   }
   .about-blue-cards {
     transform: translateY(-490px);
