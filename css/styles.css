@@ -1779,11 +1779,20 @@ a.blue-cards-column:hover > div {
   color: var(--title-color);
   margin-top: 10px;
 }
-.promo-price {
+.promo-prices {
+  display: flex;
   font-weight: 700;
+  margin-top: 10px;
+}
+.promo-price-new {
   font-size: 20px;
   color: var(--text-color);
-  margin-top: 10px;
+}
+.promo-price-old {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #8c8c8c;
+  text-decoration: line-through;
 }
 .promo-description {
   font-size: 14px;
