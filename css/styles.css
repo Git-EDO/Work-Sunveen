@@ -2770,6 +2770,151 @@ textarea::placeholder {
   }
 }
 
+/* === VACANCIES === */
+
+.vacancies-section {
+  margin-top: 40px;
+}
+.vacancies-section-content {
+  margin-top: 40px;
+}
+.vacancies-section-grid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+.vacancy {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border-bottom: 1px solid var(--dark-blue);
+  padding: 16px;
+}
+.vacancy:not(:first-child) {
+  margin-top: 24px;
+}
+.vacancy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.vacancy-name {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--title-color);
+}
+.vacancy-salary {
+  font-size: 20px;
+  color: var(--text-color);
+}
+.vacancy-main {
+  display: flex;
+  flex-direction: column;
+}
+.vacancy-main ul {
+  list-style-type: decimal;
+}
+.vacancy-main ul li {
+  list-style: inside;
+}
+.vacancy-description-title {
+  margin-top: 16px;
+  color: #8c8c8c;
+  font-weight: 700;
+}
+.vacancy-description-list {
+  margin-top: 8px;
+}
+.vacancy-requirements-title {
+  margin-top: 16px;
+  color: #8c8c8c;
+  font-weight: 700;
+}
+.vacancy-requirements-list {
+  margin-top: 8px;
+}
+.vacancy-conditions-title {
+  margin-top: 16px;
+  color: #8c8c8c;
+  font-weight: 700;
+}
+.vacancy-conditions-list {
+  margin-top: 8px;
+}
+
+/* === NEWS === */
+
+.news-section {
+  margin-top: 40px;
+}
+.news-section-content {
+  margin-top: 40px;
+}
+.news-section-grid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--dark-blue);
+}
+.news-item:not(:first-child) {
+  margin-top: 24px;
+}
+.news-item.news-item-vertical {
+  flex-direction: column;
+}
+.news-text {
+  line-height: 155%;
+}
+.news-tags {
+  padding: 16px 8px;
+  margin: 16px 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: #dde3fb;
+  border-radius: 10px;
+}
+.news-tags li {
+  position: relative;
+  padding: 0 10px;
+  font-weight: 700;
+}
+.news-tags li::before {
+  content: '#';
+}
+.news-image {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.news-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.news-item.news-item-horizontal {
+  flex-direction: row;
+}
+.news-item.news-item-horizontal .news-content {
+  flex: 0 0 50%;
+}
+.news-item.news-item-horizontal .news-image {
+  margin-left: 16px;
+}
+.news-item.news-item-vertical .news-image {
+  aspect-ratio: 16/9;
+}
+.news-item.news-item-horizontal .news-image {
+  padding-bottom: 40%;
+}
+
 @media (max-width: 1400px) {
   .footer-scroll-link {
     right: 0px;
@@ -2799,6 +2944,9 @@ textarea::placeholder {
 }
 
 @media (max-width: 992px) {
+  .vacancy {
+    width: 100%;
+  }
   .header {
     padding-bottom: 10px;
     margin-top: 0;
@@ -3454,6 +3602,21 @@ textarea::placeholder {
 }
 
 @media (max-width: 576px) {
+  .news-item.news-item-horizontal {
+    flex-direction: column;
+  }
+  .news-item.news-item-horizontal .news-image {
+    margin-left: 0;
+    padding-bottom: 80%;
+  }
+  .vacancy-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .vacancy-salary {
+    margin-top: 8px;
+  }
   .header-email {
     display: none;
   }
@@ -3781,6 +3944,12 @@ textarea::placeholder {
 }
 
 @media (max-width: 425px) {
+  .vacancy-name {
+    font-size: 18px;
+  }
+  .vacancy-salary {
+    font-size: 18px;
+  }
   .start-page {
     height: 1300px;
   }

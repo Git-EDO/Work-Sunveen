@@ -58,8 +58,8 @@ headerPopup.addEventListener('click', (e) => {
 const promoLinks = document.querySelectorAll('.promo-link')
 const promoPopup = document.querySelector('.promo-popup')
 
-if(promoLinks.length > 0) {
-  promoLinks.forEach(link => {
+if (promoLinks.length > 0) {
+  promoLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault()
       bodyLock()
@@ -68,11 +68,11 @@ if(promoLinks.length > 0) {
   })
 }
 
-if(promoPopup) {
+if (promoPopup) {
   promoPopup.addEventListener('click', (e) => {
     if (!e.target.closest('.popup-body')) {
       bodyLock()
-      promoPopup.classList.remove('active');
+      promoPopup.classList.remove('active')
     }
   })
 }
@@ -82,8 +82,8 @@ if(promoPopup) {
 const complexLinks = document.querySelectorAll('.complex-work-slide')
 const complexPopup = document.querySelector('.complex-popup')
 
-if(complexLinks.length > 0) {
-  complexLinks.forEach(link => {
+if (complexLinks.length > 0) {
+  complexLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault()
       bodyLock()
@@ -92,11 +92,11 @@ if(complexLinks.length > 0) {
   })
 }
 
-if(complexPopup) {
+if (complexPopup) {
   complexPopup.addEventListener('click', (e) => {
     if (!e.target.closest('.popup-body')) {
       bodyLock()
-      complexPopup.classList.remove('active');
+      complexPopup.classList.remove('active')
     }
   })
 }
@@ -106,7 +106,7 @@ if(complexPopup) {
 const productBtn = document.querySelector('.product-description-btn')
 const productPopup = document.querySelector('.product-popup')
 
-if(productBtn) {
+if (productBtn) {
   productBtn.addEventListener('click', (e) => {
     e.preventDefault()
     bodyLock()
@@ -114,11 +114,11 @@ if(productBtn) {
   })
 }
 
-if(productPopup) {
+if (productPopup) {
   productPopup.addEventListener('click', (e) => {
     if (!e.target.closest('.popup-body')) {
       bodyLock()
-      productPopup.classList.remove('active');
+      productPopup.classList.remove('active')
     }
   })
 }
@@ -126,17 +126,17 @@ if(productPopup) {
 // Body lock
 
 function bodyLock() {
+  const lockPaddingValue =
+    window.innerWidth - document.querySelector('body').offsetWidth + 'px'
 
-  const lockPaddingValue = window.innerWidth - document.querySelector('body').offsetWidth + 'px';
-
-  if(body.classList.contains('lock')) {
-    body.classList.remove('lock');
-    lockPaddingEls.forEach(element => {
+  if (body.classList.contains('lock')) {
+    body.classList.remove('lock')
+    lockPaddingEls.forEach((element) => {
       element.style.paddingRight = 0
     })
   } else {
-    body.classList.add('lock');
-    lockPaddingEls.forEach(element => {
+    body.classList.add('lock')
+    lockPaddingEls.forEach((element) => {
       element.style.paddingRight = lockPaddingValue
     })
   }
@@ -222,7 +222,6 @@ const swiper = new Swiper('.our-works-swiper', {
 // Слайдер сертификатов
 
 const certificatesSwiper = new Swiper('.certificates-swiper', {
-
   navigation: {
     nextEl: '.navigation-arrow-right',
     prevEl: '.navigation-arrow-left',
@@ -243,8 +242,8 @@ const certificatesSwiper = new Swiper('.certificates-swiper', {
     992: {
       slidesPerView: 5,
       spaceBetween: 20,
-    }
-  }
+    },
+  },
 })
 
 // Слайдер комплексных работ
@@ -290,13 +289,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('.map')) {
     ymaps.ready(init)
 
-
     function init() {
       const map = new ymaps.Map('map', {
         center: [54.74523049679196, 20.456964491677958],
         zoom: 16,
       })
-  
+
       let placemark = new ymaps.Placemark(
         [54.74654503730708, 20.463295042327765],
         {},
@@ -307,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
           iconImageOffset: [-13, -25],
         }
       )
-  
+
       map.controls.remove('geolocationControl') // удаляем геолокацию
       map.controls.remove('searchControl') // удаляем поиск
       map.controls.remove('trafficControl') // удаляем контроль трафика
@@ -320,7 +318,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 })
-
 
 // Footer scroll
 
@@ -367,8 +364,13 @@ const technicalDescScroll = document.querySelector('.technical-description-btn')
 if (technicalDescScroll) {
   technicalDescScroll.addEventListener('click', (e) => {
     e.preventDefault()
-    const technicalDescriptionText = document.querySelector('.technical-description-body')
-    technicalDescriptionText.scrollIntoView({ block: 'start', behavior: 'smooth' })
+    const technicalDescriptionText = document.querySelector(
+      '.technical-description-body'
+    )
+    technicalDescriptionText.scrollIntoView({
+      block: 'start',
+      behavior: 'smooth',
+    })
   })
 }
 
@@ -390,16 +392,18 @@ if (phones.length > 0) {
 const partnersLogos = document.querySelectorAll('.partners-item')
 const activePartnersLogo = document.querySelector('.active-partners-item')
 
-
 if (partnersLogos.length > 0) {
   partnersLogos.forEach((logo) => {
     console.log(logo)
     logo.addEventListener('mouseover', (e) => {
-      if(!e.target.closest('.active-partners-item')) {
+      if (!e.target.closest('.active-partners-item')) {
         const logoImg = logo.querySelector('.partner-logo img')
         logoImg.src = logoImg.dataset.colorimg
         activePartnersLogo.classList.remove('active')
-        activePartnersLogo.querySelector('.partner-logo img').src = activePartnersLogo.querySelector('.partner-logo img').dataset.filterimg
+        activePartnersLogo.querySelector('.partner-logo img').src =
+          activePartnersLogo.querySelector(
+            '.partner-logo img'
+          ).dataset.filterimg
       } else {
         activePartnersLogo.classList.remove('active')
       }
@@ -408,12 +412,12 @@ if (partnersLogos.length > 0) {
 
   partnersLogos.forEach((logo) => {
     logo.addEventListener('mouseout', (e) => {
-
-      if(!e.target.closest('.active-partners-item')) {
+      if (!e.target.closest('.active-partners-item')) {
         const logoImg = logo.querySelector('.partner-logo img')
         logoImg.src = logoImg.dataset.filterimg
         activePartnersLogo.classList.add('active')
-        activePartnersLogo.querySelector('.partner-logo img').src = activePartnersLogo.querySelector('.partner-logo img').dataset.colorimg
+        activePartnersLogo.querySelector('.partner-logo img').src =
+          activePartnersLogo.querySelector('.partner-logo img').dataset.colorimg
       } else {
         activePartnersLogo.classList.add('active')
       }
@@ -425,18 +429,16 @@ if (partnersLogos.length > 0) {
 
 const certSwiper = document.querySelector('.certificates-swiper')
 
-if(certSwiper) {
-  $(document).ready(function() {
-    $('.certificate-item').magnificPopup({type:'image'});
-  });
-  
+if (certSwiper) {
+  $(document).ready(function () {
+    $('.certificate-item').magnificPopup({ type: 'image' })
+  })
+
   $('.certificate-swiper-slide').magnificPopup({
     delegate: 'a',
-    type: 'image'
-  });
+    type: 'image',
+  })
 }
-
-
 
 // Зум-изображение товара
 
@@ -447,102 +449,105 @@ if(certSwiper) {
 const miniProductImgs = document.querySelectorAll('.product-mini-item')
 const zoomProductImg = document.querySelector('.products-zoom-img img')
 
-const zoomArrowLeft = document.querySelector('.products-zoom-img .navigation-arrow-left')
-const zoomArrowRight = document.querySelector('.products-zoom-img .navigation-arrow-right')
+const zoomArrowLeft = document.querySelector(
+  '.products-zoom-img .navigation-arrow-left'
+)
+const zoomArrowRight = document.querySelector(
+  '.products-zoom-img .navigation-arrow-right'
+)
 
 document.addEventListener('DOMContentLoaded', () => {
+  if (miniProductImgs.length > 0) {
+    let i = 0
+    const miniImgs = Array.from(miniProductImgs)
 
-if(miniProductImgs.length > 0) {
+    // Управление переключением фотографий зум-изображения
 
-  let i = 0;
-  const miniImgs = Array.from(miniProductImgs)
+    zoomArrowRight.addEventListener('click', () => {
+      if (i >= miniImgs.length - 1) {
+        i = 0
+      } else {
+        i++
+      }
+      miniProductImgs.forEach((el) => el.classList.remove('active'))
+      miniImgs[i].classList.add('active')
+      zoomProductImg.src = miniImgs[i].querySelector('img').src
+    })
 
-// Управление переключением фотографий зум-изображения
+    zoomArrowLeft.addEventListener('click', () => {
+      if (i <= 0) {
+        i = miniImgs.length - 1
+      } else {
+        i--
+      }
+      miniProductImgs.forEach((el) => el.classList.remove('active'))
+      miniImgs[i].classList.add('active')
+      zoomProductImg.src = miniImgs[i].querySelector('img').src
+    })
 
-zoomArrowRight.addEventListener('click', () => {
-  if(i >= miniImgs.length-1) {
-    i = 0
-  } else {
-    i++
-  }
-  miniProductImgs.forEach(el => el.classList.remove('active'))
-  miniImgs[i].classList.add('active')
-  zoomProductImg.src = miniImgs[i].querySelector('img').src
-})
-
-zoomArrowLeft.addEventListener('click', () => {
-  if(i <= 0) {
-    i = miniImgs.length-1
-  } else {
-    i--
-  }
-  miniProductImgs.forEach(el => el.classList.remove('active'))
-  miniImgs[i].classList.add('active')
-  zoomProductImg.src = miniImgs[i].querySelector('img').src
-})
-
-// Управление зум-изображением продукта
+    // Управление зум-изображением продукта
 
     miniProductImgs[0].classList.add('active')
-    zoomProductImg.src = document.querySelector('.product-mini-item.active img').src
+    zoomProductImg.src = document.querySelector(
+      '.product-mini-item.active img'
+    ).src
 
-    miniProductImgs.forEach(image => {
+    miniProductImgs.forEach((image) => {
       image.addEventListener('click', () => {
-        miniProductImgs.forEach(el => el.classList.remove('active'))
+        miniProductImgs.forEach((el) => el.classList.remove('active'))
         image.classList.add('active')
         i = miniImgs.indexOf(image)
         const thisImage = image.querySelector('img')
         zoomProductImg.src = thisImage.src
       })
     })
-
   }
-
 })
 
-// Ленивая загрузка изображений
+// Ленивая загрузка карты
 
 const lazyImages = document.querySelectorAll('img[data-src]')
-const windowHeight = document.documentElement.clientHeight;
+const windowHeight = document.documentElement.clientHeight
 
-let lazyImagesPositions = [];
+let lazyImagesPositions = []
 
-if(lazyImages.length > 0) {
-  lazyImages.forEach(img => {
-    if(img.dataset.src) {
+if (lazyImages.length > 0) {
+  lazyImages.forEach((img) => {
+    if (img.dataset.src) {
       lazyImagesPositions.push(img.getBoundingClientRect().top + scrollY)
       lazyScrollCheck()
     }
   })
-};
+}
 
-window.addEventListener('scroll', lazyScroll);
+window.addEventListener('DOMContentLoaded', lazyScroll)
+window.addEventListener('scroll', lazyScroll)
 
 function lazyScroll() {
-  if(document.querySelectorAll('img[data-src]').length > 0) {
+  if (document.querySelectorAll('img[data-src]').length > 0) {
     lazyScrollCheck()
   }
-};
+}
 
 function lazyScrollCheck() {
-  let imgIndex = lazyImagesPositions.findIndex (
-    item => scrollY > item - windowHeight
-  );
-  if(imgIndex >= 0) {
-    if(lazyImages[imgIndex].dataset.src) {
-      lazyImages[imgIndex].src = lazyImages[imgIndex].dataset.src;
-      lazyImages[imgIndex].removeAttribute('data-src');
+  let imgIndex = lazyImagesPositions.findIndex(
+    (item) => scrollY > item - windowHeight
+  )
+  if (imgIndex >= 0) {
+    if (lazyImages[imgIndex].dataset.src) {
+      lazyImages[imgIndex].src = lazyImages[imgIndex].dataset.src
+      lazyImages[imgIndex].removeAttribute('data-src')
     }
-    delete lazyImagesPositions[imgIndex];
+    delete lazyImagesPositions[imgIndex]
   }
-};
+}
 
 // Галерея для изображений
 
-if(lazyImages.length > 0) {
-  $(document).ready(function() {
-    $('.gallery-item').magnificPopup({type:'image'});
-  });
+if (lazyImages.length > 0) {
+  $(document).ready(function () {
+    $('.gallery-item').magnificPopup({ type: 'image' })
+  })
 }
 
 // Загрузка дополнительных изображений
@@ -556,13 +561,15 @@ if(lazyImages.length > 0) {
 
 const loadMoreBtn = document.querySelector('.load-more-btn')
 
-if(loadMoreBtn) {
+if (loadMoreBtn) {
   loadMoreBtn.addEventListener('click', (e) => {
     e.preventDefault()
-    hiddenGalleriesArr = Array.from(document.querySelectorAll('.gallery-hidden'))
-    if(hiddenGalleriesArr.length > 1) {
+    hiddenGalleriesArr = Array.from(
+      document.querySelectorAll('.gallery-hidden')
+    )
+    if (hiddenGalleriesArr.length > 1) {
       hiddenGalleriesArr[0].classList.remove('gallery-hidden')
-    } else if(hiddenGalleriesArr.length = 1) {
+    } else if ((hiddenGalleriesArr.length = 1)) {
       hiddenGalleriesArr[0].classList.remove('gallery-hidden')
       loadMoreBtn.closest('.load-more-button').style.display = 'none'
     }
