@@ -200,66 +200,200 @@
       <main class="main">
         <section class="news-section">
           <div class="container">
-            <div class="breadcrumbs">
-              <a href="#" class="breadcrumbs-item first-breadcrumbs-item">
-                Главная
-              </a>
-              <a href="#" class="breadcrumbs-item"> Новости </a>
-            </div>
+            <ul
+              class="breadcrumbs"
+              itemscope
+              itemtype="https://schema.org/BreadcrumbList"
+            >
+              <li
+                class="breadcrumbs-item first-breadcrumbs-item"
+                itemprop="itemListElement"
+                itemscope
+                itemtype="https://schema.org/ListItem"
+              >
+                <a href="#" itemprop="item"
+                  ><span itemprop="name">Главная</span></a
+                >
+                <meta itemprop="position" content="0" />
+              </li>
+              <li
+                class="breadcrumbs-item"
+                itemprop="itemListElement"
+                itemscope
+                itemtype="https://schema.org/ListItem"
+              >
+                <div itemprop="item">
+                  <span itemprop="name">Новости</span>
+                  <meta itemprop="position" content="1" />
+                </div>
+              </li>
+            </ul>
             <div class="news-section-content">
               <div class="section-title">
                 <h2>Новости</h2>
               </div>
               <div class="news-section-grid">
-                <div class="news-item news-item-vertical">
+                <article
+                  class="news-item"
+                  itemscope
+                  itemtype="http://schema.org/Article"
+                >
+                  <link itemprop="image" href="./img/our-works/image2.jpg" />
+                  <div class="news-header">
+                    <h3 class="news-subtitle" itemprop="headline name">
+                      Подзаголовок новости
+                    </h3>
+                    <meta itemprop="keywords" content="Подзаголовок новости" />
+                    <time
+                      datetime="2023-02-01 12:00"
+                      class="news-date"
+                      itemprop="datePublished"
+                      >1 февраля 2023г.</time
+                    >
+                  </div>
                   <div class="news-content">
-                    <div class="news-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Corporis ipsa, officiis nihil, dicta quibusdam aperiam vel
-                      magni quasi totam laudantium doloremque obcaecati. Harum
-                      quo tenetur ut, modi nihil iure deleniti doloribus
-                      voluptatum vitae nesciunt deserunt hic error dolorum
-                      fugiat perferendis maxime ipsa porro inventore repellat?
-                      Est earum dolorem aliquid pariatur.
+                    <div class="news-text" itemprop="articleBody">
+                      <div
+                        class="news-image horizontal"
+                        itemscope
+                        itemprop="image"
+                        itemtype="http://schema.org/ImageObject"
+                      >
+                        <img
+                          src="./img/our-work-page/gallery/image001.jpg"
+                          itemprop="contentUrl"
+                          alt="Подзаголовок новости"
+                          title="Подзаголовок новости"
+                        />
+                      </div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Officia, iusto laudantium? Neque numquam mollitia ea
+                      deserunt. Velit, voluptas suscipit atque quae vero optio
+                      alias quasi itaque praesentium, officia ad omnis
+                      consectetur in dignissimos sapiente nam quas, esse
+                      consequatur. Libero in, maiores a error dicta odit
+                      molestiae alias, perspiciatis sapiente magnam, recusandae
+                      similique repellat earum quia delectus. Recusandae tempore
+                      saepe, perferendis facere libero dicta repellendus sequi
+                      dolor accusantium, incidunt neque cupiditate doloremque
+                      esse inventore ad asperiores molestiae numquam architecto
+                      praesentium earum harum! Nostrum officia reprehenderit
+                      deserunt quaerat hic unde optio minima quia. Eos ipsam
+                      mollitia voluptatum dignissimos! Veniam nesciunt
+                      exercitationem omnis repellat a consequatur voluptates
+                      dignissimos ullam ipsa veritatis. Neque, quia! Cupiditate
+                      iure ab dolorum magnam optio nam similique laborum
+                      reiciendis dolores adipisci fugit, tempore vel harum
+                      facere totam autem sint iusto, nostrum, voluptatem ipsam
+                      soluta nulla libero eum? Inventore repellat reprehenderit
+                      placeat itaque rerum ab corporis totam nihil? Enim dolores
+                      quaerat nobis possimus, placeat ex et accusamus modi neque
+                      explicabo sunt omnis necessitatibus ducimus magni minima
+                      totam consequuntur voluptate eius repellat atque delectus
+                      iusto? Expedita quis animi maiores, saepe commodi
+                      perferendis nobis totam eaque sapiente veniam perspiciatis
+                      porro eligendi incidunt magni error natus nostrum quia
+                      iusto, repudiandae sunt nulla asperiores?
                     </div>
                     <ul class="news-tags">
-                      <li>Хэштег</li>
-                      <li>Хэштег</li>
-                      <li>Хэштег</li>
-                      <li>Хэштег</li>
-                      <li>Хэштег</li>
+                      <li>
+                        Хэштег1
+                        <meta itemprop="keywords" content="Хэштег1" />
+                      </li>
+                      <li>
+                        Хэштег2
+                        <meta itemprop="keywords" content="Хэштег2" />
+                      </li>
+                      <li>
+                        Хэштег3
+                        <meta itemprop="keywords" content="Хэштег3" />
+                      </li>
+                      <li>
+                        Хэштег4
+                        <meta itemprop="keywords" content="Хэштег4" />
+                      </li>
+                      <li>
+                        Хэштег5
+                        <meta itemprop="keywords" content="Хэштег5" />
+                      </li>
                     </ul>
                   </div>
-                  <div class="news-image">
-                    <img src="./img/our-works/image2.jpg" alt="image" />
+                </article>
+                <article
+                  class="news-item"
+                  itemscope
+                  itemtype="http://schema.org/Article"
+                >
+                  <link
+                    itemprop="image"
+                    href="./img/our-work-page/gallery/image002.jpg"
+                  />
+                  <div class="news-header">
+                    <h3 class="news-subtitle" itemprop="headline name">
+                      Подзаголовок ещё одной новости
+                    </h3>
+                    <meta itemprop="keywords" content="Подзаголовок новости" />
+                    <time
+                      datetime="2023-02-01 12:00"
+                      class="news-date"
+                      itemprop="datePublished"
+                      >2 февраля 2023г.</time
+                    >
                   </div>
-                </div>
-                <div class="news-item news-item-horizontal">
                   <div class="news-content">
-                    <div class="news-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Corporis ipsa, officiis nihil, dicta quibusdam aperiam vel
-                      magni quasi totam laudantium doloremque obcaecati. Harum
-                      quo tenetur ut, modi nihil iure deleniti doloribus
-                      voluptatum vitae nesciunt deserunt hic error dolorum
-                      fugiat perferendis maxime ipsa porro inventore repellat?
-                      Est earum dolorem aliquid pariatur.
+                    <div class="news-text" itemprop="articleBody">
+                      <div
+                        class="news-image vertical"
+                        itemscope
+                        itemprop="image"
+                        itemtype="http://schema.org/ImageObject"
+                      >
+                        <img
+                          src="./img/our-work-page/gallery/image002.jpg"
+                          itemprop="contentUrl"
+                          alt="Подзаголовок новости"
+                          title="Подзаголовок новости"
+                        />
+                      </div>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nobis, vero distinctio? Eligendi culpa numquam
+                      necessitatibus? Dolores, odio! Nostrum dolor culpa iusto
+                      velit. Quos pariatur, reiciendis quo voluptatibus magni,
+                      blanditiis molestias, deleniti debitis aliquid autem quam
+                      alias nostrum sint rem odit? Explicabo, totam voluptatem?
+                      Aperiam, asperiores totam, voluptatem illum dolores odit
+                      dolorem magni culpa atque officia expedita! Perspiciatis
+                      dolor temporibus quaerat cupiditate eos nulla fuga nobis
+                      at. Autem quasi at possimus incidunt quos molestiae est
+                      animi voluptatibus tempore aspernatur? Mollitia culpa
+                      fugiat natus reprehenderit impedit, necessitatibus
+                      reiciendis pariatur ullam totam ex minus aperiam nam
+                      provident ea! Necessitatibus aut excepturi odit sunt!
                     </div>
                     <ul class="news-tags">
-                      <li>Хэштег</li>
-                      <li>Хэштег</li>
-                      <li>Хэштег</li>
-                      <li>Хэштег</li>
-                      <li>Хэштег</li>
+                      <li>
+                        Хэштег1
+                        <meta itemprop="keywords" content="Хэштег1" />
+                      </li>
+                      <li>
+                        Хэштег2
+                        <meta itemprop="keywords" content="Хэштег2" />
+                      </li>
+                      <li>
+                        Хэштег3
+                        <meta itemprop="keywords" content="Хэштег3" />
+                      </li>
+                      <li>
+                        Хэштег4
+                        <meta itemprop="keywords" content="Хэштег4" />
+                      </li>
+                      <li>
+                        Хэштег5
+                        <meta itemprop="keywords" content="Хэштег5" />
+                      </li>
                     </ul>
                   </div>
-                  <div class="news-image">
-                    <img
-                      src="./img/our-work-page/gallery/image022.jpg"
-                      alt="image"
-                    />
-                  </div>
-                </div>
+                </article>
               </div>
             </div>
           </div>
@@ -334,6 +468,8 @@
                 <li><a href="#">Наши партнёры</a></li>
                 <li><a href="#">Контакты</a></li>
                 <li><a href="#">О компании</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Новости</a></li>
               </ul>
               <ul class="footer-links">
                 <li class="footer-header-links">контактные телефоны</li>
