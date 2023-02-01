@@ -2916,7 +2916,7 @@ textarea::placeholder {
 .news-image.vertical {
   width: 20%;
   aspect-ratio: 9/16;
-  max-height: 250px;
+  max-height: 200px;
 }
 .news-image img {
   position: absolute;
