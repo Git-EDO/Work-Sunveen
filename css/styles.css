@@ -2903,18 +2903,20 @@ textarea::placeholder {
 .news-image {
   float: right;
   position: relative;
-  width: 30%;
+
   margin-left: 16px;
   margin-bottom: 16px;
   border-radius: 8px;
   overflow: hidden;
 }
 .news-image.horizontal {
+  width: 30%;
   aspect-ratio: 16/9;
 }
 .news-image.vertical {
+  width: 20%;
   aspect-ratio: 9/16;
-  max-height: 300px;
+  max-height: 250px;
 }
 .news-image img {
   position: absolute;
@@ -3524,8 +3526,11 @@ textarea::placeholder {
   .subcategories-blue-cards {
     transform: translateY(0);
   }
-  .news-image {
+  .news-image.horizontal {
     width: 45%;
+  }
+  .news-image.vertical {
+    width: 30%;
   }
 }
 
@@ -3943,10 +3948,16 @@ textarea::placeholder {
   .subcategories-blue-cards {
     transform: translateY(0);
   }
-  .news-image {
+  .news-image.horizontal {
     float: none;
     width: 100%;
     margin-left: 0;
+  }
+  .news-image.vertical {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    max-height: 300px;
   }
 }
 
