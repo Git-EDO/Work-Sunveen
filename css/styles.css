@@ -529,6 +529,13 @@ input::placeholder {
 .checkbox-personal input:hover {
   border: none;
 }
+/* === SPECIAL TEXT === */
+
+.special-text {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
 
 /* === START PAGE === */
 
@@ -579,18 +586,34 @@ input::placeholder {
   display: flex;
   z-index: 1;
 }
-
-.start-page-title {
+.start-page-title h1 {
   flex: 0 0 50%;
   font-weight: 800;
   font-size: 26px;
   line-height: 145%;
   color: var(--title-color);
 }
+.start-page-title h1 {
+  margin: 0;
+}
+.catalogue-start-page h1 {
+  flex: 0 0 50%;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 145%;
+  color: var(--title-color);
+}
+.catalogue-start-page h1 {
+  margin: 0;
+}
 
 .start-page-text {
   flex: 0 0 45%;
   margin-left: 20px;
+}
+
+.start-page-text p {
+  font-size: 14px;
 }
 
 .start-page-text p:last-child {
@@ -680,6 +703,14 @@ a.blue-cards-column:hover > div {
   margin-top: 80px;
 }
 
+.section-title h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 115%;
+  color: var(--title-color);
+  text-align: center;
+  margin: 0;
+}
 .section-title h2 {
   font-weight: 800;
   font-size: 36px;
@@ -1257,7 +1288,9 @@ a.blue-cards-column:hover > div {
   white-space: nowrap;
   transition: 0.5s ease;
 }
-
+address {
+  font-style: normal;
+}
 .map-contacts-body a:hover {
   color: rgba(65, 65, 65, 0.7);
 }
@@ -1627,7 +1660,7 @@ a.blue-cards-column:hover > div {
 .subcategories-start-page {
   height: 460px;
 }
-.subcategories-catalogue .section-title h2 {
+.subcategories-catalogue .section-title h1 {
   padding-bottom: 15px;
 }
 
@@ -1864,9 +1897,11 @@ a.blue-cards-column:hover > div {
 }
 
 .about-start-page .start-page-title {
-  font-size: 52px;
   flex: 0 0 60%;
   position: relative;
+}
+.about-start-page .start-page-title h1 {
+  font-size: 52px;
 }
 
 .about-start-page .start-page-title::before {
@@ -2187,7 +2222,6 @@ a.blue-cards-column:hover > div {
 .tecnical-descriptrion-subtitle {
   font-weight: 600;
   margin-top: 30px;
-  margin-bottom: -30px;
 }
 .sections-wrapper {
   margin-top: 40px;
@@ -2299,7 +2333,7 @@ textarea::placeholder {
   height: 460px;
 }
 
-.our-work-start-page .start-page-title {
+.our-work-start-page .start-page-title h1 {
   font-size: 32px;
 }
 
@@ -3393,8 +3427,10 @@ textarea::placeholder {
     max-width: 80%;
   }
   .about-start-page .start-page-title {
-    font-size: 36px;
     flex: 1 0 60%;
+  }
+  .about-start-page .start-page-title h1 {
+    font-size: 36px;
   }
   .about-start-page {
     height: 724px;
@@ -3569,6 +3605,9 @@ textarea::placeholder {
     flex: 1 0 50%;
     font-size: 32px;
   }
+  .start-page-title h1 {
+    font-size: 32px;
+  }
 
   .actual-promos-body {
     flex-direction: column;
@@ -3667,7 +3706,7 @@ textarea::placeholder {
     font-size: 14px;
   }
 
-  .start-page-title {
+  .start-page-title h1 {
     font-size: 18px;
   }
 
@@ -3886,7 +3925,7 @@ textarea::placeholder {
   .sections-wrapper .feedback-body-subtitle {
     font-size: 13px;
   }
-  .our-work-start-page .start-page-title {
+  .our-work-start-page .start-page-title h1 {
     font-size: 20px;
   }
 
@@ -3959,6 +3998,9 @@ textarea::placeholder {
     margin-left: 0;
     max-height: 300px;
   }
+  .section-title h2 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -4019,7 +4061,7 @@ textarea::placeholder {
     right: -140px;
   }
 
-  .section-title h2 {
+  .section-title h1 {
     font-size: 24px;
   }
 
@@ -4086,7 +4128,7 @@ textarea::placeholder {
   .complex-popup-title {
     font-size: 20px;
   }
-  .about-start-page .start-page-title {
+  .about-start-page .start-page-title h1 {
     font-size: 22px;
   }
   .about-company-photo {

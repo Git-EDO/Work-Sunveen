@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head itemscope itemtype="http://schema.org/WPHeader">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/swiper-bundle.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Sunveen - Тепло домашнего Солнца</title>
   </head>
   <body class="lock-padding">
     <div class="wrapper">
@@ -225,16 +223,48 @@
 
         <section class="subcategories-catalogue">
           <div class="container">
-            <div class="breadcrumbs">
-              <a href="#" class="breadcrumbs-item first-breadcrumbs-item">
-                Главная
-              </a>
-              <a href="#" class="breadcrumbs-item"> Каталог товаров </a>
-              <a href="#" class="breadcrumbs-item"> Солнечные панели </a>
-            </div>
+            <ul
+              class="breadcrumbs"
+              itemscope
+              itemtype="https://schema.org/BreadcrumbList"
+            >
+              <li
+                class="breadcrumbs-item first-breadcrumbs-item"
+                itemprop="itemListElement"
+                itemscope
+                itemtype="https://schema.org/ListItem"
+              >
+                <a href="#" itemprop="item"
+                  ><span itemprop="name">Главная</span></a
+                >
+                <meta itemprop="position" content="0" />
+              </li>
+              <li
+                class="breadcrumbs-item"
+                itemprop="itemListElement"
+                itemscope
+                itemtype="https://schema.org/ListItem"
+              >
+                <a href="#" itemprop="item"
+                  ><span itemprop="name">Каталог товаров</span></a
+                >
+                <meta itemprop="position" content="1" />
+              </li>
+              <li
+                class="breadcrumbs-item"
+                itemprop="itemListElement"
+                itemscope
+                itemtype="https://schema.org/ListItem"
+              >
+                <div itemprop="item">
+                  <span itemprop="name">Солнечные панели</span>
+                  <meta itemprop="position" content="2" />
+                </div>
+              </li>
+            </ul>
             <div class="subcategories-catalogue-content">
               <div class="section-title">
-                <h2>Солнечные панели</h2>
+                <h1>Солнечные панели</h1>
               </div>
               <div class="section-subtitle">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam a
@@ -606,9 +636,7 @@
       </footer>
     </div>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<ваш API-ключ>"></script>
     <script src="https://unpkg.com/imask"></script>
-    <script src="./js/swiper-bundle.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

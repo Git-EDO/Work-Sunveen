@@ -1,440 +1,733 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/swiper-bundle.css">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>Sunveen - Тепло домашнего Солнца</title>
-</head>
-<body class="lock-padding">
-  <div class="wrapper">
-    <header class="header">
-      <div class="header-first-row">
-        <div class="container">
-          <div class="header-logo">
-            <a href="#">
-              <img src="./img/header/logo.svg" alt="logo">
-            </a>
-          </div>
-          <div class="header-address">
-            <img src="./img/header/geo-icon.svg" alt="icon">
-            Калининград, Советский проспект, дом 202
-          </div>
-          <div class="header-email">
-            <img src="./img/header/mail-icon.svg" alt="icon">
-            <a href="mailto:info@sunveen.ru" class="dark-text-link">info@sunveen.ru</a>
-          </div>
-          <div class="header-tel-contacts">
-            <a href="tel:+79637384240">
-              <img src="./img/header/phone-icon.svg" alt="icon">
-            </a>
-            <div class="header-phones">
-              <div class="header-phone">
-                <a href="tel:+79637384240" class="dark-text-link">+7 963 738-42-40</a>
-              </div>
-              <div class="header-phone">
-                <a href="tel:+79062379585" class="dark-text-link">+7 906 237-95-85</a>
+  <head itemscope itemtype="http://schema.org/WPHeader">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      itemprop="description"
+      name="description"
+      content="Калининградская компания «Берег-Плюс» занимается продажей, установкой и настройкой систем автономного и резервного энергоснабжения для дома, работы и отдыха"
+    />
+    <meta
+      itemprop="keywords"
+      name="keywords"
+      content="солнечные панели, ветрогенераторы, инверторы, контроллеры, аккумуляторы, солнечные коллекторы, сплит-системы, баки, тепловые насосы, кондиционеры, ИК-обогреватели, насосы, комплектующие и аксессуары, зарядные станции для электротранспорта, видеонаблюдение и сигнализация, окна пвх"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title itemprop="headline">
+      Системы теплоснабжения в Калининграде – купить системы теплоснабжения и
+      климатическое оборудование для дома
+    </title>
+  </head>
+  <body class="lock-padding">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-first-row">
+          <div class="container">
+            <div class="header-logo">
+              <a href="#">
+                <img src="./img/header/logo.svg" alt="logo" />
+              </a>
+            </div>
+            <div class="header-address">
+              <img src="./img/header/geo-icon.svg" alt="icon" />
+              Калининград, Советский проспект, дом 202
+            </div>
+            <div class="header-email">
+              <img src="./img/header/mail-icon.svg" alt="icon" />
+              <a href="mailto:info@sunveen.ru" class="dark-text-link"
+                >info@sunveen.ru</a
+              >
+            </div>
+            <div class="header-tel-contacts">
+              <a href="tel:+79637384240">
+                <img src="./img/header/phone-icon.svg" alt="icon" />
+              </a>
+              <div class="header-phones">
+                <div class="header-phone">
+                  <a href="tel:+79637384240" class="dark-text-link"
+                    >+7 963 738-42-40</a
+                  >
+                </div>
+                <div class="header-phone">
+                  <a href="tel:+79062379585" class="dark-text-link"
+                    >+7 906 237-95-85</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <a href="#" class="btn call-btn">Заказать звонок</a>
-          <div class="header-burger">
-            <span></span>
+            <a href="#" class="btn call-btn">Заказать звонок</a>
+            <div class="header-burger">
+              <span></span>
+            </div>
           </div>
         </div>
-      </div>
-      <nav class="nav">
-        <div class="container">
-          <div class="mobile-menu-logo">
-            <a href="#">
-              <img src="./img/header/logo.svg" alt="logo">
-            </a>
-            <div class="close-mobile-menu"></div>
-          </div>
-          <div class="mobile-menu-address">
-            <img src="./img/header/geo-icon.svg" alt="icon">
-            Калининград, Советский проспект, дом 202
-          </div>
-          <ul class="nav-menu">
-            <li class="has-submenu">
-              <a href="https://git-edo.github.io/Work-Sunveen/catalogue.html">Каталог товаров</a>
-              <div class="nav-menu-wrapper">
-                <ul class="submenu-list">
-                  <li><a href="#">Солнечные панели</a></li>
-                  <li><a href="#">Ветрогенераторы</a></li>
-                  <li><a href="#">Инверторы</a></li>
-                  <li><a href="#">Контроллеры</a></li>
-                  <li><a href="#">Аккумуляторы</a></li>
-                  <li><a href="#">Солнечные коллекторы</a></li>
-                  <li><a href="#">Сплит-системы</a></li>
-                  <li><a href="#">Баки</a></li>
-                  <li><a href="#">Тепловые насосы</a></li>
-                  <li><a href="#">Кондиционеры</a></li>
-                  <li><a href="#">ИК-обогреватели</a></li>
-                  <li><a href="#">Насосы</a></li>
-                  <li><a href="#">Комплектующие и аксессуары</a></li>
-                  <li><a href="#">Зарядные станции для электротранспорта</a></li>
-                  <li><a href="#">Видеонаблюдение и сигнализация</a></li>
-                  <li><a href="#">Окна ПВХ</a></li>
-                </ul>
+        <nav class="nav">
+          <div class="container">
+            <div class="mobile-menu-logo">
+              <a href="#">
+                <img src="./img/header/logo.svg" alt="logo" />
+              </a>
+              <div class="close-mobile-menu"></div>
             </div>
-            </li>
-            <li><a href="https://git-edo.github.io/Work-Sunveen/index.html">Главная</a></li>
-            <li><a href="https://git-edo.github.io/Work-Sunveen/promos.html">Действующие акции</a></li>
-            <li><a href="https://git-edo.github.io/Work-Sunveen/our-work.html">Наши работы</a></li>
-            <li><a href="#" class="partners-scroll">Наши партнёры</a></li>
-            <li><a href="https://git-edo.github.io/Work-Sunveen/about.html#contacts">Контакты</a></li>
-            <li><a href="https://git-edo.github.io/Work-Sunveen/about.html">О компании</a></li>
-          </ul>
+            <div class="mobile-menu-address">
+              <img src="./img/header/geo-icon.svg" alt="icon" />
+              Калининград, Советский проспект, дом 202
+            </div>
+            <ul class="nav-menu">
+              <li class="has-submenu">
+                <a href="https://git-edo.github.io/Work-Sunveen/catalogue.html"
+                  >Каталог товаров</a
+                >
+                <div class="nav-menu-wrapper">
+                  <ul class="submenu-list">
+                    <li><a href="#">Солнечные панели</a></li>
+                    <li><a href="#">Ветрогенераторы</a></li>
+                    <li><a href="#">Инверторы</a></li>
+                    <li><a href="#">Контроллеры</a></li>
+                    <li><a href="#">Аккумуляторы</a></li>
+                    <li><a href="#">Солнечные коллекторы</a></li>
+                    <li><a href="#">Сплит-системы</a></li>
+                    <li><a href="#">Баки</a></li>
+                    <li><a href="#">Тепловые насосы</a></li>
+                    <li><a href="#">Кондиционеры</a></li>
+                    <li><a href="#">ИК-обогреватели</a></li>
+                    <li><a href="#">Насосы</a></li>
+                    <li><a href="#">Комплектующие и аксессуары</a></li>
+                    <li>
+                      <a href="#">Зарядные станции для электротранспорта</a>
+                    </li>
+                    <li><a href="#">Видеонаблюдение и сигнализация</a></li>
+                    <li><a href="#">Окна ПВХ</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="https://git-edo.github.io/Work-Sunveen/index.html"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a href="https://git-edo.github.io/Work-Sunveen/promos.html"
+                  >Действующие акции</a
+                >
+              </li>
+              <li>
+                <a href="https://git-edo.github.io/Work-Sunveen/our-work.html"
+                  >Наши работы</a
+                >
+              </li>
+              <li><a href="#" class="partners-scroll">Наши партнёры</a></li>
+              <li>
+                <a
+                  href="https://git-edo.github.io/Work-Sunveen/about.html#contacts"
+                  >Контакты</a
+                >
+              </li>
+              <li>
+                <a href="https://git-edo.github.io/Work-Sunveen/about.html"
+                  >О компании</a
+                >
+              </li>
+            </ul>
             <div class="mobile-menu-email">
-              <img src="./img/header/mail-icon.svg" alt="icon">
-              <a href="mailto:info@sunveen.ru" class="dark-text-link">info@sunveen.ru</a>
+              <img src="./img/header/mail-icon.svg" alt="icon" />
+              <a href="mailto:info@sunveen.ru" class="dark-text-link"
+                >info@sunveen.ru</a
+              >
             </div>
             <div class="mobile-menu-tel-contacts">
-              <img src="./img/header/phone-icon.svg" alt="icon">
+              <img src="./img/header/phone-icon.svg" alt="icon" />
               <div class="mobile-menu-phones">
                 <div class="mobile-menu-phone">
-                  <a href="tel:+79637384240" class="dark-text-link">+7 963 738-42-40</a>
+                  <a href="tel:+79637384240" class="dark-text-link"
+                    >+7 963 738-42-40</a
+                  >
                 </div>
                 <div class="mobile-menu-phone">
-                  <a href="tel:+79062379585" class="dark-text-link">+7 906 237-95-85</a>
+                  <a href="tel:+79062379585" class="dark-text-link"
+                    >+7 906 237-95-85</a
+                  >
                 </div>
               </div>
             </div>
             <a href="#" class="btn mobile-call-btn call-btn">Заказать звонок</a>
-        </div>
-      </nav>
-      <div class="header-popup popup">
-        <div class="header-popup-body popup-body">
-          <div class="popup-close"></div>
-          <div class="popup-title">
-            Заказать звонок
           </div>
-          <div class="popup-subtitle">
-            Заполните форму, наш менеджер свяжется с Вами в ближайшее время
-          </div>
-          <form class="header-popup-form">
-            <input type="text" placeholder="Ваше имя" name="name" required>
-            <input type="text" placeholder="Ваш телефон" name="phone" class="phone" required>
-            <div class="checkbox-personal">
-              <input type="checkbox" value="yes" name="personal-data" id="header-personal" required>
-              <label for="header-personal">Согласен на обработку <a href="#">персональных данных</a></label>
+        </nav>
+        <div class="header-popup popup">
+          <div class="header-popup-body popup-body">
+            <div class="popup-close"></div>
+            <div class="popup-title">Заказать звонок</div>
+            <div class="popup-subtitle">
+              Заполните форму, наш менеджер свяжется с Вами в ближайшее время
             </div>
-            <button class="btn header-btn">Отправить</button>
-          </form>
+            <form class="header-popup-form">
+              <input type="text" placeholder="Ваше имя" name="name" required />
+              <input
+                type="text"
+                placeholder="Ваш телефон"
+                name="phone"
+                class="phone"
+                required
+              />
+              <div class="checkbox-personal">
+                <input
+                  type="checkbox"
+                  value="yes"
+                  name="personal-data"
+                  id="header-personal"
+                  required
+                />
+                <label for="header-personal"
+                  >Согласен на обработку
+                  <a href="#">персональных данных</a></label
+                >
+              </div>
+              <button class="btn header-btn">Отправить</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </header>
-    <main class="main">
-      <section class="start-page catalogue-start-page">
-        <div class="start-page-bg catalogue-start-page-bg">
+      </header>
+      <main class="main">
+        <section class="start-page catalogue-start-page">
+          <div class="start-page-bg catalogue-start-page-bg">
+            <img src="./img/catalogue/start-page/bg-image.jpg" alt="image" />
+            <div class="start-page-bg-cover"></div>
+          </div>
+          <div class="container">
+            <div class="start-page-body">
+              <div class="start-page-title">
+                <h1>
+                  Когда Ты энергонезависим —
+                  <br />
+                  Ты спокоен!
+                </h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="blue-cards catalogue-blue-cards">
+          <div class="container">
+            <div class="blue-cards-row">
+              <div class="blue-cards-column">
+                <div class="blue-card-subtitle">
+                  Установка оборудования квалифицированными специалистами,
+                  с допуском на высоте
+                </div>
+                <img
+                  src="./img/catalogue/cata-blue-cards/icon1.svg"
+                  alt="icon"
+                />
+              </div>
+              <div class="blue-cards-column">
+                <div class="blue-card-subtitle">
+                  Всё оборудование имеет сертификаты качества
+                </div>
+                <img
+                  src="./img/catalogue/cata-blue-cards/icon2.svg"
+                  alt="icon"
+                />
+              </div>
+              <div class="blue-cards-column">
+                <div class="blue-card-subtitle">
+                  Оборудование от ведущих профильных производителей России,
+                  Китая и Европы
+                </div>
+                <img
+                  src="./img/catalogue/cata-blue-cards/icon3.svg"
+                  alt="icon"
+                />
+              </div>
+              <div class="blue-cards-column">
+                <div class="blue-card-subtitle">
+                  Срок службы оборудования <span>25-30</span> и более лет;
+                  <br />
+                  На установленные системы гарантия до <span>5</span> лет
+                </div>
+                <img
+                  src="./img/catalogue/cata-blue-cards/icon4.svg"
+                  alt="icon"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
-          <img src="./img/catalogue/start-page/bg-image.jpg" alt="image">
-          <div class="start-page-bg-cover"></div>
-        </div>
-        <div class="container">
-          <div class="start-page-body">
-            <div class="start-page-title">
-              <p>Когда Ты энергонезависим — 
-              <br>
-              Ты спокоен!
-              </p>
+        <section class="categories-catalogue after-cards-section">
+          <div class="container">
+            <div class="breadcrumbs">
+              <a href="#" class="breadcrumbs-item first-breadcrumbs-item">
+                Главная
+              </a>
+              <a href="#" class="breadcrumbs-item"> Каталог товаров </a>
+            </div>
+            <div class="categories-catalogue-content">
+              <div class="section-title">
+                <h1>Каталог товаров</h1>
+              </div>
+              <div
+                class="categories-catalogue-grid"
+                itemscope
+                itemtype="http://schema.org/ItemList"
+              >
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat1.jpg"
+                      alt="Солнечные панели"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">
+                    Солнечные панели
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat3.jpg"
+                      alt="Ветрогенераторы"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">
+                    Ветрогенераторы
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat2.jpg"
+                      alt="Инверторы"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">Инверторы</div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat4.jpg"
+                      alt="Контроллеры"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">Контроллеры</div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat5.jpg"
+                      alt="Аккумуляторы"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">
+                    Аккумуляторы
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat6.jpg"
+                      alt="Солнечные коллекторы"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">
+                    Солнечные коллекторы
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat7.jpg"
+                      alt="Сплит-системы"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">
+                    Сплит-системы
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat8.jpg"
+                      alt="Баки"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">Баки</div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat9.jpg"
+                      alt="Тепловые насосы"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">
+                    Тепловые насосы
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat10.jpg"
+                      alt="Кондиционеры"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">
+                    Кондиционеры
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat11.jpg"
+                      alt="ИК-обогреватели"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">
+                    ИК-обогреватели
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat12.jpg"
+                      alt="Насосы"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">Насосы</div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat13.jpg"
+                      alt="Комплектующие и аксессуары"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">
+                    Комплектующие и аксессуары
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat14.jpg"
+                      alt="Зарядные станции для электротранспорта"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">
+                    Зарядные станции для электротранспорта
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat15.jpg"
+                      alt="Видеонаблюдение и сигнализация"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">
+                    Видеонаблюдение и сигнализация
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="categories-item"
+                  itemscope
+                  itemprop="itemListElement"
+                  itemtype="http://schema.org/Product"
+                >
+                  <div class="categories-image">
+                    <img
+                      itemprop="image"
+                      src="./img/catalogue/categories/cat16.jpg"
+                      alt="Окна ПВХ"
+                    />
+                  </div>
+                  <div class="categories-name" itemprop="name">Окна ПВХ</div>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="blue-cards catalogue-blue-cards">
-        <div class="container">
-          <div class="blue-cards-row">
-            <div class="blue-cards-column">
-              <div class="blue-card-subtitle">
-                Установка оборудования квалифицированными специалистами, с допуском на высоте
-              </div>
-              <img src="./img/catalogue/cata-blue-cards/icon1.svg" alt="icon">
-            </div>
-            <div class="blue-cards-column">
-              <div class="blue-card-subtitle">
-                Всё оборудование имеет сертификаты качества
-              </div>
-              <img src="./img/catalogue/cata-blue-cards/icon2.svg" alt="icon">
-            </div>
-            <div class="blue-cards-column">
-              <div class="blue-card-subtitle">
-                Оборудование от ведущих профильных производителей России, Китая и Европы
-              </div>
-              <img src="./img/catalogue/cata-blue-cards/icon3.svg" alt="icon">
-            </div>
-            <div class="blue-cards-column">
-              <div class="blue-card-subtitle">
-                Срок службы оборудования <span>25-30</span> и более лет;
-                <br>
-                На установленные системы гарантия до <span>5</span> лет
-              </div>
-              <img src="./img/catalogue/cata-blue-cards/icon4.svg" alt="icon">
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="categories-catalogue after-cards-section">
-        <div class="container">
-          <div class="breadcrumbs">
-            <a href="#" class="breadcrumbs-item first-breadcrumbs-item">
-              Главная
-            </a>
-            <a href="#" class="breadcrumbs-item">
-              Каталог товаров
-            </a>
+        <section class="feedback-block">
+          <div class="container">
+            <div class="feedback-body">
+              <div class="feedback-body-cover"></div>
+              <div class="feedback-content">
+                <div class="feedback-body-title">
+                  С удовольствием грамотно ответим на Ваши вопросы, тел.:
+                  <a href="tel:+79637384240">+7 (963) 738-42-40</a>
+                </div>
+                <div class="feedback-body-subtitle">
+                  или заполните форму и мы быстро Вам перезвоним. Благодарим за
+                  доверие.
+                </div>
+                <form class="feedback-form">
+                  <input type="text" placeholder="Ваше имя" name="name" />
+                  <input
+                    type="tel"
+                    class="phone"
+                    placeholder="Ваш телефон"
+                    name="phone"
+                  />
+                  <button class="btn feedback-form-btn">Оставить заявку</button>
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="categories-catalogue-content">
+        </section>
+
+        <section class="our-partners before-footer-section" id="partners">
+          <div class="container">
             <div class="section-title">
-              <h2>
-                Каталог товаров
-              </h2>
+              <h2>Наши партнёры</h2>
             </div>
-            <div class="categories-catalogue-grid">
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat1.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Солнечные панели
-                </div>
-              </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat3.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Ветрогенераторы
+            <div class="partners-grid">
+              <a href="#" class="partners-item active-partners-item active">
+                <div class="partner-logo">
+                  <img
+                    src="./img/catalogue/logos/filter-logo/logo001.png"
+                    data-colorimg="./img/catalogue/logos/logo001.png"
+                    data-filterimg="./img/catalogue/logos/filter-logo/logo001.png"
+                    alt="logo"
+                  />
                 </div>
               </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat2.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Инверторы
-                </div>
-              </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat4.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Контроллеры
+              <a href="#" class="partners-item">
+                <div class="partner-logo">
+                  <img
+                    src="./img/catalogue/logos/filter-logo/logo002.png"
+                    alt="logo"
+                    data-colorimg="./img/catalogue/logos/logo002.png"
+                    data-filterimg="./img/catalogue/logos/filter-logo/logo002.png"
+                  />
                 </div>
               </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat5.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Аккумуляторы
-                </div>
-              </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat6.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Солнечные коллекторы
+              <a href="#" class="partners-item">
+                <div class="partner-logo">
+                  <img
+                    src="./img/catalogue/logos/filter-logo/logo003.png"
+                    alt="logo"
+                    data-colorimg="./img/catalogue/logos/logo003.png"
+                    data-filterimg="./img/catalogue/logos/filter-logo/logo003.png"
+                  />
                 </div>
               </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat7.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Сплит-системы
-                </div>
-              </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat8.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Баки
+              <a href="#" class="partners-item">
+                <div class="partner-logo">
+                  <img
+                    src="./img/catalogue/logos/filter-logo/logo004.png"
+                    alt="logo"
+                    data-colorimg="./img/catalogue/logos/logo004.png"
+                    data-filterimg="./img/catalogue/logos/filter-logo/logo004.png"
+                  />
                 </div>
               </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat9.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Тепловые насосы
-                </div>
-              </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat10.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Кондиционеры
+              <a href="#" class="partners-item">
+                <div class="partner-logo">
+                  <img
+                    src="./img/catalogue/logos/filter-logo/logo005.png"
+                    alt="logo"
+                    data-colorimg="./img/catalogue/logos/logo005.png"
+                    data-filterimg="./img/catalogue/logos/filter-logo/logo005.png"
+                  />
                 </div>
               </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat11.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  ИК-обогреватели
-                </div>
-              </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat12.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Насосы
+              <a href="#" class="partners-item">
+                <div class="partner-logo">
+                  <img
+                    src="./img/catalogue/logos/filter-logo/logo006.png"
+                    alt="logo"
+                    data-colorimg="./img/catalogue/logos/logo006.png"
+                    data-filterimg="./img/catalogue/logos/filter-logo/logo006.png"
+                  />
                 </div>
               </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat13.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Комплектующие и аксессуары
-                </div>
-              </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat14.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Зарядные станции для электротранспорта
+              <a href="#" class="partners-item">
+                <div class="partner-logo">
+                  <img
+                    src="./img/catalogue/logos/filter-logo/logo007.png"
+                    alt="logo"
+                    data-colorimg="./img/catalogue/logos/logo007.png"
+                    data-filterimg="./img/catalogue/logos/filter-logo/logo007.png"
+                  />
                 </div>
               </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat15.jpg" alt="">
-                </div>
-                <div class="categories-name">
-                  Видеонаблюдение и сигнализация
+              <a href="#" class="partners-item">
+                <div class="partner-logo">
+                  <img
+                    src="./img/catalogue/logos/filter-logo/logo008.png"
+                    alt="logo"
+                    data-colorimg="./img/catalogue/logos/logo008.png"
+                    data-filterimg="./img/catalogue/logos/filter-logo/logo008.png"
+                  />
                 </div>
               </a>
-              <a href="#" class="categories-item">
-                <div class="categories-image">
-                  <img src="./img/catalogue/categories/cat16.jpg" alt="">
+              <a href="#" class="partners-item">
+                <div class="partner-logo">
+                  <img
+                    src="./img/catalogue/logos/filter-logo/logo009.png"
+                    alt="logo"
+                    data-colorimg="./img/catalogue/logos/logo009.png"
+                    data-filterimg="./img/catalogue/logos/filter-logo/logo009.png"
+                  />
                 </div>
-                <div class="categories-name">
-                  Окна ПВХ
+              </a>
+              <a href="#" class="partners-item">
+                <div class="partner-logo">
+                  <img
+                    src="./img/catalogue/logos/filter-logo/logo010.png"
+                    alt="logo"
+                    data-colorimg="./img/catalogue/logos/logo010.png"
+                    data-filterimg="./img/catalogue/logos/filter-logo/logo010.png"
+                  />
+                </div>
+              </a>
+              <a href="#" class="partners-item">
+                <div class="partner-logo">
+                  <img
+                    src="./img/catalogue/logos/filter-logo/logo011.png"
+                    alt="logo"
+                    data-colorimg="./img/catalogue/logos/logo011.png"
+                    data-filterimg="./img/catalogue/logos/filter-logo/logo011.png"
+                  />
+                </div>
+              </a>
+              <a href="#" class="partners-item">
+                <div class="partner-logo">
+                  <img
+                    src="./img/catalogue/logos/filter-logo/logo012.png"
+                    alt="logo"
+                    data-colorimg="./img/catalogue/logos/logo012.png"
+                    data-filterimg="./img/catalogue/logos/filter-logo/logo012.png"
+                  />
                 </div>
               </a>
             </div>
           </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-bg">
+          <div class="footer-bg-img">
+            <img src="./img/footer/footer-bg-jpg.jpg" alt="bg" />
+          </div>
+          <div class="footer-bg-cover"></div>
         </div>
-      </section>
-
-      <section class="feedback-block">
         <div class="container">
-          <div class="feedback-body">
-            <div class="feedback-body-cover"></div>
-            <div class="feedback-content">
-              <div class="feedback-body-title">
-                С удовольствием грамотно ответим на Ваши вопросы, тел.: <a href="tel:+79637384240">+7 (963) 738-42-40</a>
-              </div>
-              <div class="feedback-body-subtitle">
-                или заполните форму и мы быстро Вам перезвоним. Благодарим за доверие.
-              </div>
-              <form class="feedback-form">
-                <input type="text" placeholder="Ваше имя" name="name">
-                <input type="tel" class="phone" placeholder="Ваш телефон" name="phone">
-                <button class="btn feedback-form-btn">Оставить заявку</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="our-partners before-footer-section" id="partners">
-        <div class="container">
-          <div class="section-title">
-            <h2>
-              Наши партнёры
-            </h2>
-          </div>
-          <div class="partners-grid">
-            <a href="#" class="partners-item active-partners-item active">
-              <div class="partner-logo">
-                <img src="./img/catalogue/logos/filter-logo/logo001.png" data-colorimg="./img/catalogue/logos/logo001.png" data-filterimg="./img/catalogue/logos/filter-logo/logo001.png" alt="logo">
-              </div>
-            </a>
-            <a href="#" class="partners-item">
-              <div class="partner-logo">
-                <img src="./img/catalogue/logos/filter-logo/logo002.png" alt="logo" data-colorimg="./img/catalogue/logos/logo002.png" data-filterimg="./img/catalogue/logos/filter-logo/logo002.png">
-              </div>
-            </a>
-            <a href="#" class="partners-item">
-              <div class="partner-logo">
-                <img src="./img/catalogue/logos/filter-logo/logo003.png" alt="logo" data-colorimg="./img/catalogue/logos/logo003.png" data-filterimg="./img/catalogue/logos/filter-logo/logo003.png">
-              </div>
-            </a>
-            <a href="#" class="partners-item">
-              <div class="partner-logo">
-                <img src="./img/catalogue/logos/filter-logo/logo004.png" alt="logo" data-colorimg="./img/catalogue/logos/logo004.png" data-filterimg="./img/catalogue/logos/filter-logo/logo004.png">
-              </div>
-            </a>
-            <a href="#" class="partners-item">
-              <div class="partner-logo">
-                <img src="./img/catalogue/logos/filter-logo/logo005.png" alt="logo" data-colorimg="./img/catalogue/logos/logo005.png" data-filterimg="./img/catalogue/logos/filter-logo/logo005.png">
-              </div>
-            </a>
-            <a href="#" class="partners-item">
-              <div class="partner-logo">
-                <img src="./img/catalogue/logos/filter-logo/logo006.png" alt="logo" data-colorimg="./img/catalogue/logos/logo006.png" data-filterimg="./img/catalogue/logos/filter-logo/logo006.png">
-              </div>
-            </a>
-            <a href="#" class="partners-item">
-              <div class="partner-logo">
-                <img src="./img/catalogue/logos/filter-logo/logo007.png" alt="logo" data-colorimg="./img/catalogue/logos/logo007.png" data-filterimg="./img/catalogue/logos/filter-logo/logo007.png">
-              </div>
-            </a>
-            <a href="#" class="partners-item">
-              <div class="partner-logo">
-                <img src="./img/catalogue/logos/filter-logo/logo008.png" alt="logo" data-colorimg="./img/catalogue/logos/logo008.png" data-filterimg="./img/catalogue/logos/filter-logo/logo008.png">
-              </div>
-            </a>
-            <a href="#" class="partners-item">
-              <div class="partner-logo">
-                <img src="./img/catalogue/logos/filter-logo/logo009.png" alt="logo" data-colorimg="./img/catalogue/logos/logo009.png" data-filterimg="./img/catalogue/logos/filter-logo/logo009.png">
-              </div>
-            </a>
-            <a href="#" class="partners-item">
-              <div class="partner-logo">
-                <img src="./img/catalogue/logos/filter-logo/logo010.png" alt="logo" data-colorimg="./img/catalogue/logos/logo010.png" data-filterimg="./img/catalogue/logos/filter-logo/logo010.png">
-              </div>
-            </a>
-            <a href="#" class="partners-item">
-              <div class="partner-logo">
-                <img src="./img/catalogue/logos/filter-logo/logo011.png" alt="logo" data-colorimg="./img/catalogue/logos/logo011.png" data-filterimg="./img/catalogue/logos/filter-logo/logo011.png">
-              </div>
-            </a>
-            <a href="#" class="partners-item">
-              <div class="partner-logo">
-                <img src="./img/catalogue/logos/filter-logo/logo012.png" alt="logo" data-colorimg="./img/catalogue/logos/logo012.png" data-filterimg="./img/catalogue/logos/filter-logo/logo012.png">
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-    </main>
-    <footer class="footer">
-      <div class="footer-bg">
-        <div class="footer-bg-img">
-          <img src="./img/footer/footer-bg-jpg.jpg" alt="bg">
-        </div>
-        <div class="footer-bg-cover"></div>
-      </div>
-      <div class="container">
-        <div class="footer-wrapper">
+          <div class="footer-wrapper">
             <a href="#" class="footer-logo">
-              <img src="./img/footer/footer-logo.svg" alt="logo">
+              <img src="./img/footer/footer-logo.svg" alt="logo" />
             </a>
             <div class="footer-links-column">
               <ul class="footer-links">
@@ -470,22 +763,22 @@
                 <li class="footer-header-links">контактные телефоны</li>
                 <li>
                   Мобильные тел.:
-                  <br>
+                  <br />
                   <a href="tel:+7 (963) 738-42-40">+7 (963) 738-42-40</a>
-                  <br>
+                  <br />
                   <a href="tel:+7 (906) 237-95-85">+7 (906) 237-95-85</a>
                 </li>
                 <li>
                   Городские тел.:
-                  <br>
+                  <br />
                   <a href="tel:+7 (4012) 37-42-40">+7 (4012) 37-42-40</a>
-                  <br>
+                  <br />
                   <a href="tel:+7 (4012) 37-95-85">+7 (4012) 37-95-85</a>
                 </li>
                 <li class="footer-header-links">график работы</li>
                 <li>
                   Пн.-пт.: 09:00-18:00 ч.,
-                  <br>
+                  <br />
                   сб.-вс.: выходной
                 </li>
                 <li class="footer-header-links">электронная почта</li>
@@ -493,23 +786,20 @@
                 <li class="footer-header-links">Офис</li>
                 <li>Калининград, Советский проспект, дом 202</li>
               </ul>
+            </div>
+            <div class="footer-scroll-link">
+              <img src="./img/footer/arrow-top.svg" alt="icon" />
+            </div>
           </div>
-          <div class="footer-scroll-link">
-            <img src="./img/footer/arrow-top.svg" alt="icon">
-          </div>
-        </div>
-        <div class="footer-text">
+          <div class="footer-text">
             <p>© ООО «Берег-Плюс», 2022г.</p>
             <p><a href="#">Политика конфиденциальности</a></p>
+          </div>
         </div>
-      </div>
+      </footer>
+    </div>
 
-    </footer>
-  </div>
-  
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<ваш API-ключ>"></script>
-  <script src="https://unpkg.com/imask"></script>
-  <script src="./js/swiper-bundle.js"></script>
-  <script src="./js/script.js"></script>
-</body>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

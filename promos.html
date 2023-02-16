@@ -190,12 +190,34 @@
       <main class="main">
         <section class="promos-section">
           <div class="container">
-            <div class="breadcrumbs">
-              <a href="#" class="breadcrumbs-item first-breadcrumbs-item">
-                Главная
-              </a>
-              <a href="#" class="breadcrumbs-item"> Действующие акции </a>
-            </div>
+            <ul
+              class="breadcrumbs"
+              itemscope
+              itemtype="https://schema.org/BreadcrumbList"
+            >
+              <li
+                class="breadcrumbs-item first-breadcrumbs-item"
+                itemprop="itemListElement"
+                itemscope
+                itemtype="https://schema.org/ListItem"
+              >
+                <a href="#" itemprop="item"
+                  ><span itemprop="name">Главная</span></a
+                >
+                <meta itemprop="position" content="0" />
+              </li>
+              <li
+                class="breadcrumbs-item"
+                itemprop="itemListElement"
+                itemscope
+                itemtype="https://schema.org/ListItem"
+              >
+                <div itemprop="item">
+                  <span itemprop="name">Действующие акции</span>
+                  <meta itemprop="position" content="1" />
+                </div>
+              </li>
+            </ul>
             <div class="promos-section-content">
               <div class="section-title">
                 <h2>Действующие акции</h2>

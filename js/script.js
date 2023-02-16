@@ -144,144 +144,152 @@ function bodyLock() {
 
 // Слайдер на главной
 
-let mainSwiper = new Swiper('.swiper', {
-  // Optional parameters
-  slidesPerView: 4,
-  slidesPerGroup: 4,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
+if (document.querySelector('.swiper')) {
+  let mainSwiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      576: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+      768: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      992: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      },
     },
-    576: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-    },
-    768: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-    },
-    992: {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-    },
-  },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.navigation-arrow-right',
-    prevEl: '.navigation-arrow-left',
-  },
-})
+    // Navigation arrows
+    navigation: {
+      nextEl: '.navigation-arrow-right',
+      prevEl: '.navigation-arrow-left',
+    },
+  })
+}
 
 // 3D карусель на главной
 
-const swiper = new Swiper('.our-works-swiper', {
-  effect: 'coverflow',
-  centeredSlides: false,
+if (document.querySelector('.our-works-swiper')) {
+  const swiper = new Swiper('.our-works-swiper', {
+    effect: 'coverflow',
+    centeredSlides: false,
 
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.navigation-arrow-right',
-    prevEl: '.navigation-arrow-left',
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      coverflowEffect: {
-        depth: 0,
-        rotate: 0,
-        slideShadows: false,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.navigation-arrow-right',
+      prevEl: '.navigation-arrow-left',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        coverflowEffect: {
+          depth: 0,
+          rotate: 0,
+          slideShadows: false,
+        },
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        coverflowEffect: {
+          depth: 0,
+          rotate: 0,
+          slideShadows: false,
+        },
+      },
+      992: {
+        slidesPerView: 3,
+        coverflowEffect: {
+          depth: 400,
+          rotate: 0,
+          slideShadows: false,
+        },
       },
     },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      coverflowEffect: {
-        depth: 0,
-        rotate: 0,
-        slideShadows: false,
-      },
-    },
-    992: {
-      slidesPerView: 3,
-      coverflowEffect: {
-        depth: 400,
-        rotate: 0,
-        slideShadows: false,
-      },
-    },
-  },
-})
+  })
+}
 
 // Слайдер сертификатов
 
-const certificatesSwiper = new Swiper('.certificates-swiper', {
-  navigation: {
-    nextEl: '.navigation-arrow-right',
-    prevEl: '.navigation-arrow-left',
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 10,
+if (document.querySelector('.certificates-swiper')) {
+  const certificatesSwiper = new Swiper('.certificates-swiper', {
+    navigation: {
+      nextEl: '.navigation-arrow-right',
+      prevEl: '.navigation-arrow-left',
     },
-    576: {
-      slidesPerView: 2,
-      spaceBetween: 10,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+      },
     },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    992: {
-      slidesPerView: 5,
-      spaceBetween: 20,
-    },
-  },
-})
+  })
+}
 
 // Слайдер комплексных работ
 
-let complexSwiper = new Swiper('.complex-work-swiper', {
-  // Optional parameters
-  slidesPerView: 4,
-  slidesPerGroup: 4,
-  spaceBetween: 20,
-  pagination: {
-    el: '.complex-work-swiper-pagination',
-    clickable: true,
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
+if (document.querySelector('.complex-work-swiper')) {
+  let complexSwiper = new Swiper('.complex-work-swiper', {
+    // Optional parameters
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    spaceBetween: 20,
+    pagination: {
+      el: '.complex-work-swiper-pagination',
+      clickable: true,
     },
-    576: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      576: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+      768: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      992: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      },
     },
-    768: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-    },
-    992: {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-    },
-  },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.navigation-arrow-right',
-    prevEl: '.navigation-arrow-left',
-  },
-})
+    // Navigation arrows
+    navigation: {
+      nextEl: '.navigation-arrow-right',
+      prevEl: '.navigation-arrow-left',
+    },
+  })
+}
 
 // Карта
 
@@ -575,3 +583,74 @@ if (loadMoreBtn) {
     }
   })
 }
+
+// Создание метатегов для категорий
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.location.pathname.includes('category')) {
+    const head = document.querySelector('head')
+    const pageH1 = document.querySelector('.section-title h1').innerText
+
+    const metaInfo = `
+    <title itemprop="headline">
+      ${pageH1} в Калининграде – купить ${pageH1} по выгодной цене
+    </title>
+      <meta
+        itemprop="description"
+        name="description"
+        content="${pageH1} по доступной цене в Калининграде. Надёжное и долговечное оборудование на нашем сайте"
+    />
+    <meta
+    itemprop="keywords"
+    name="keywords"
+    content="${pageH1}, ${pageH1} цена, ${pageH1} купить"
+/>
+    `
+    head.innerHTML += metaInfo
+  }
+})
+
+// Создание метатегов для продукта
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.location.pathname.includes('product')) {
+    const head = document.querySelector('head')
+    const productName = document.querySelector(
+      'h2.product-description-name'
+    ).innerText
+    const productPrice = document.querySelector(
+      '.product-description-new-price'
+    ).innerText
+
+    const metaInfo = `
+    <title itemprop="headline">
+    ${productName} купить по цене ${productPrice} в Калининграде — интернет магазин sunveen.ru 
+    </title>
+      <meta
+        itemprop="description"
+        name="description"
+        ${productName} в интернет-магазине sunveen.ru   всего за ${productPrice}. Доставка по РФ, скидки, акции. Звоните: +7 963 738-42-40
+    />
+    <meta
+    itemprop="keywords"
+    name="keywords"
+    content="${productName}, ${productName} цена, ${productName} купить"
+/>
+    `
+    head.innerHTML += metaInfo
+
+    const miniImages = document.querySelectorAll('.product-mini-item img')
+    const zoomImage = document.querySelector('.products-zoom-img > img')
+
+    if (miniImages.length) {
+      miniImages.forEach((image) => {
+        image.alt = productName
+        image.title = productName
+      })
+    }
+    if (zoomImage) {
+      zoomImage.alt = productName
+      zoomImage.title = productName
+    }
+  }
+})
